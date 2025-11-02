@@ -1,5 +1,11 @@
 # starlight-plugin-show-latest-version
 
+## 0.5.1
+
+### Patch Changes
+
+- [#52](https://github.com/trueberryless-org/starlight-plugin-show-latest-version/pull/52) [`1152b13`](https://github.com/trueberryless-org/starlight-plugin-show-latest-version/commit/1152b137cc1fec970fb604213bb7a71b7fff2597) Thanks [@trueberryless-org](https://github.com/apps/trueberryless-org)! - Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.
+
 ## 0.5.0
 
 ### Minor Changes
