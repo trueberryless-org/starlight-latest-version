@@ -58,9 +58,6 @@ export default defineConfig({
       ],
     }),
   ],
-  experimental: {
-    session: true,
-  },
   output: "server",
   adapter: netlify(),
 });
