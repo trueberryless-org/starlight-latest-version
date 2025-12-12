@@ -2,7 +2,7 @@
 
 Show the latest released version of your package in your Starlight documentation.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/86ca2a59-dc13-478c-8f4b-56660b3e476f/deploy-status)](https://app.netlify.com/sites/starlight-latest-version/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6569e37d-d7af-49b6-8b28-cd85dbf73dab/deploy-status)](https://app.netlify.com/projects/starlight-latest-version/deploys)
 
 ## Package
 
