@@ -1,5 +1,11 @@
 # starlight-latest-version
 
+## 0.6.0
+
+### Minor Changes
+
+- [#58](https://github.com/trueberryless-org/starlight-latest-version/pull/58) [`f4776fb`](https://github.com/trueberryless-org/starlight-latest-version/commit/f4776fb8602ca30bbf9de592fa062b4e261a5225) Thanks [@trueberryless](https://github.com/trueberryless)! - Rename package from `starlight-plugin-show-latest-version` to `starlight-latest-version`.
+
 ## 0.5.1
 
 ### Patch Changes

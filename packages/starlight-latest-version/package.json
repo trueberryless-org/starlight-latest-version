@@ -1,6 +1,6 @@
 {
   "name": "starlight-latest-version",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Show the latest released version of your package in your Starlight documentation.",
   "keywords": [
     "starlight",
