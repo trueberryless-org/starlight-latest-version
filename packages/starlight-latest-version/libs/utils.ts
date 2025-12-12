@@ -1,7 +1,7 @@
 import { SEMVER_PATTERN } from "../consts/semantic.version.pattern";
-import { extractVersion, latestReleaseApis } from "./urlBuilder";
 import type { starlightLatestVersionConfig } from "./config";
 import type { starlightLatestVersionContext } from "./types";
+import { extractVersion, latestReleaseApis } from "./urlBuilder";
 
 export default async function fetchVersion(
   config: starlightLatestVersionConfig

@@ -20,6 +20,4 @@ export const VersionState = z.union([
   }),
 ]);
 
-export type starlightLatestVersionContext = z.infer<
-  typeof VersionState
->;
+export type starlightLatestVersionContext = z.infer<typeof VersionState>;

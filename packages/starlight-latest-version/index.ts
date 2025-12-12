@@ -8,10 +8,7 @@ import {
 import { overrideStarlightComponent } from "./libs/starlight";
 import { vitePluginstarlightLatestVersionConfig } from "./libs/vite";
 
-export type {
-  starlightLatestVersionConfig,
-  starlightLatestVersionUserConfig,
-};
+export type { starlightLatestVersionConfig, starlightLatestVersionUserConfig };
 
 export default function starlightLatestVersion(
   userConfig?: starlightLatestVersionUserConfig
@@ -47,9 +44,7 @@ export default function starlightLatestVersion(
             "astro:config:setup": ({ updateConfig }) => {
               updateConfig({
                 vite: {
-                  plugins: [
-                    vitePluginstarlightLatestVersionConfig(config),
-                  ],
+                  plugins: [vitePluginstarlightLatestVersionConfig(config)],
                 },
               });
             },

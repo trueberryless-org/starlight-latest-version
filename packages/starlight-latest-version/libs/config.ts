@@ -44,9 +44,5 @@ export function validateConfig(
   return config.data;
 }
 
-export type starlightLatestVersionUserConfig = z.input<
-  typeof configSchema
->;
-export type starlightLatestVersionConfig = z.output<
-  typeof configSchema
->;
+export type starlightLatestVersionUserConfig = z.input<typeof configSchema>;
+export type starlightLatestVersionConfig = z.output<typeof configSchema>;
