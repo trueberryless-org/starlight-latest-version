@@ -12,7 +12,7 @@ export function overrideStarlightComponent(
       `It looks like you already have a \`${override}\` component override in your Starlight configuration.`
     );
     logger.warn(
-      `To use \`starlight-plugin-show-latest-version\`, either remove your override or update it to render the content from \`starlight-plugin-show-latest-version/components/${component}.astro\`.`
+      `To use \`starlight-latest-version\`, either remove your override or update it to render the content from \`starlight-latest-version/components/${component}.astro\`.`
     );
     if (component === "DynamicVersionBadge") {
       logger.warn(
@@ -24,6 +24,6 @@ export function overrideStarlightComponent(
   }
 
   return {
-    [override]: `starlight-plugin-show-latest-version/overrides/${override}.astro`,
+    [override]: `starlight-latest-version/overrides/${override}.astro`,
   };
 }

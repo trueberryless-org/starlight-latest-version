@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  IMAGE_NAME: starlight-plugin-show-latest-version
+  IMAGE_NAME: starlight-latest-version
   NODE_VERSION: 24.10.0
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
     name: Filter
     runs-on: ubuntu-latest
     outputs:
-      starlight-plugin-show-latest-version: ${{ steps.filter.outputs.starlight-plugin-show-latest-version }}
+      starlight-latest-version: ${{ steps.filter.outputs.starlight-latest-version }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
@@ -30,8 +30,8 @@ jobs:
         id: filter
         with:
           filters: |
-            starlight-plugin-show-latest-version:
-              - 'packages/starlight-plugin-show-latest-version/**'
+            starlight-latest-version:
+              - 'packages/starlight-latest-version/**'
 
   changesets:
     name: Changesets
@@ -79,8 +79,8 @@ jobs:
         if: steps.changesets.outputs.hasChangesets == 'true'
         run: |
           git checkout changeset-release/main
-          VERSION=$(node -p "require('./packages/starlight-plugin-show-latest-version/package.json').version")
-          NAME=$(node -p "require('./packages/starlight-plugin-show-latest-version/package.json').name")
+          VERSION=$(node -p "require('./packages/starlight-latest-version/package.json').version")
+          NAME=$(node -p "require('./packages/starlight-latest-version/package.json').name")
           git commit --amend -m "ci: release $NAME v$VERSION" --no-edit
           git push origin changeset-release/main:changeset-release/main --force
 
@@ -98,7 +98,7 @@ jobs:
       - name: Read version from package.json
         id: get_version
         run: |
-          VERSION=$(jq -r '.version' packages/starlight-plugin-show-latest-version/package.json)
+          VERSION=$(jq -r '.version' packages/starlight-latest-version/package.json)
           echo "IMAGE_TAG=$VERSION" >> $GITHUB_ENV
 
   publish:
@@ -135,7 +135,7 @@ jobs:
         run: pnpm i
 
       - run: |
-          cd packages/starlight-plugin-show-latest-version
+          cd packages/starlight-latest-version
           npm publish --access public
 
   release:
@@ -153,7 +153,7 @@ jobs:
       - id: extract-changelog
         uses: sean0x42/markdown-extract@7b185cbe85263116bbf741e739e7198ba86465dc # v2.1.0
         with:
-          file: packages/starlight-plugin-show-latest-version/CHANGELOG.md
+          file: packages/starlight-latest-version/CHANGELOG.md
           pattern: ${{ needs.image-tag.outputs.IMAGE_TAG }}
 
       - uses: ncipollo/release-action@v1

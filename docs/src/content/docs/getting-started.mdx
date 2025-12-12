@@ -2,7 +2,7 @@
 title: Getting Started
 ---
 
-Show the latest released version of your package in your documentation.
+Show the latest released version of your package in your Starlight documentation.
 
 ## Prerequisites
 
@@ -15,14 +15,14 @@ import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
 <Steps>
 
-1. `starlight-plugin-show-latest-version` is a Starlight [plugin](https://starlight.astro.build/reference/plugins/). Install it by running the following command in your terminal:
+1. `starlight-latest-version` is a Starlight [plugin](https://starlight.astro.build/reference/plugins/). Install it by running the following command in your terminal:
 
    <Tabs syncKey="pkg">
 
    <TabItem label="npm">
 
    ```sh
-   npm install starlight-plugin-show-latest-version
+   npm install starlight-latest-version
    ```
 
    </TabItem>
@@ -30,7 +30,7 @@ import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
    <TabItem label="pnpm">
 
    ```sh
-   pnpm add starlight-plugin-show-latest-version
+   pnpm add starlight-latest-version
    ```
 
    </TabItem>
@@ -38,7 +38,7 @@ import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
    <TabItem label="Yarn">
 
    ```sh
-   yarn add starlight-plugin-show-latest-version
+   yarn add starlight-latest-version
    ```
 
    </TabItem>
@@ -51,14 +51,14 @@ import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
    // astro.config.mjs
    import starlight from '@astrojs/starlight'
    import { defineConfig } from 'astro/config'
-   +import starlightPluginShowLatestVersion from 'starlight-plugin-show-latest-version'
+   +import starlightLatestVersion from 'starlight-latest-version'
 
    export default defineConfig({
      integrations: [
        starlight({
-   +      plugins: [starlightPluginShowLatestVersion({
+   +      plugins: [starlightLatestVersion({
    +        source: {
-   +          slug: "starlight-plugin-show-latest-version",
+   +          slug: "starlight-latest-version",
    +        },
    +      })],
          title: 'My Docs',
@@ -73,19 +73,19 @@ import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
 </Steps>
 
-The Starlight Plugin Show Latest Version plugin behavior can be tweaked using various [configuration options](/configuration).
+The Starlight Latest Version plugin behavior can be tweaked using various [configuration options](/configuration).
 
 ## Component overrides
 
-The Starlight Plugin Show Latest Version plugin uses a Starlight [component override](https://starlight.astro.build/guides/overriding-components/) for the [`SiteTitle`](https://starlight.astro.build/reference/overrides/#sitetitle) component to add the [`VersionBadge`](/components#versionbadge) to the site title.
+The Starlight Latest Version plugin uses a Starlight [component override](https://starlight.astro.build/guides/overriding-components/) for the [`SiteTitle`](https://starlight.astro.build/reference/overrides/#sitetitle) component to add the [`VersionBadge`](/components#versionbadge) to the site title.
 
-If you have a custom `SiteTitle` component override in your Starlight project, you will need to manually render the `DynamicVersionBadge` component from the Starlight Plugin Show Latest Version plugin in your custom component:
+If you have a custom `SiteTitle` component override in your Starlight project, you will need to manually render the `DynamicVersionBadge` component from the Starlight Latest Version plugin in your custom component:
 
 ```diff lang="astro"
 ---
 // src/components/overrides/SiteTitle.astro
 import Default from '@astrojs/starlight/components/SiteTitle.astro'
-+import DynamicVersionBadge from 'starlight-plugin-show-latest-version/components/DynamicVersionBadge.astro'
++import DynamicVersionBadge from 'starlight-latest-version/components/DynamicVersionBadge.astro'
 ---
 
 <Default><slot /></Default>

@@ -1,18 +1,18 @@
 {
-  "name": "starlight-plugin-show-latest-version-docs",
+  "name": "starlight-latest-version-docs",
   "version": "0.4.3",
-  "description": "Show the latest released version of your package in your documentation.",
+  "description": "Show the latest released version of your package in your Starlight documentation.",
   "keywords": [
     "starlight",
     "docs",
     "astro",
     "version"
   ],
-  "homepage": "https://github.com/trueberryless-org/starlight-plugin-show-latest-version",
-  "bugs": "https://github.com/trueberryless-org/starlight-plugin-show-latest-version/issues",
+  "homepage": "https://github.com/trueberryless-org/starlight-latest-version",
+  "bugs": "https://github.com/trueberryless-org/starlight-latest-version/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trueberryless-org/starlight-plugin-show-latest-version.git",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version.git",
     "directory": "docs"
   },
   "license": "MIT",
@@ -33,7 +33,7 @@
     "sharp": "^0.33.5",
     "starlight-contributor-list": "^0.3.0",
     "starlight-links-validator": "^0.14.3",
-    "starlight-plugin-show-latest-version": "workspace:*"
+    "starlight-latest-version": "workspace:*"
   },
   "packageManager": "pnpm@10.10.0",
   "engines": {

@@ -1,13 +1,13 @@
 import type { ViteUserConfig } from "astro";
 
-import type { StarlightPluginShowLatestVersionConfig } from "..";
+import type { starlightLatestVersionConfig } from "..";
 
-export function vitePluginStarlightPluginShowLatestVersionConfig(
-  config: StarlightPluginShowLatestVersionConfig
-  // context: StarlightPluginShowLatestVersionContext
+export function vitePluginstarlightLatestVersionConfig(
+  config: starlightLatestVersionConfig
+  // context: starlightLatestVersionContext
 ): VitePlugin {
   const modules = {
-    "virtual:starlight-plugin-show-latest-version-config": `export default ${JSON.stringify(
+    "virtual:starlight-latest-version-config": `export default ${JSON.stringify(
       config
     )}`,
   } satisfies Record<string, string>;
@@ -20,7 +20,7 @@ export function vitePluginStarlightPluginShowLatestVersionConfig(
   );
 
   return {
-    name: "vite-plugin-starlight-plugin-show-latest-version-config",
+    name: "vite-plugin-starlight-latest-version-config",
     load(id) {
       const moduleId = moduleResolutionMap[id];
       return moduleId ? modules[moduleId] : undefined;

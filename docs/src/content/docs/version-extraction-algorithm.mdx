@@ -5,11 +5,11 @@ description: Explaination of how the version tag is being extracted from the Git
 
 import { Badge } from "@astrojs/starlight/components";
 
-The Starlight Plugin Show Latest Version plugin fetches the latest release of your package as specified in the [`source` configuration option](/configuration/#source).
+The Starlight Latest Version plugin fetches the latest release of your package as specified in the [`source` configuration option](/configuration/#source).
 
 ## Regex Pattern
 
-The Starlight Plugin Show Latest Version plugin uses a regex pattern to extract the version (and prerelease). The default pattern is:
+The Starlight Latest Version plugin uses a regex pattern to extract the version (and prerelease). The default pattern is:
 
 ```ts wrap
 /^(?:v|[^0-9\s]*@)?v?(?<version>[0-9]+\.[0-9]+\.[0-9]+)(?:-(?<prerelease>[0-9A-Za-z]+(?:\.[0-9A-Za-z]+)*))?(?![-.]|[^-\w.])$/;

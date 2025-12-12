@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/@changesets/config@3.0.3/schema.json",
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "trueberryless-org/starlight-plugin-show-latest-version" }
+    { "repo": "trueberryless-org/starlight-latest-version" }
   ],
   "commit": false,
   "fixed": [],
@@ -10,5 +10,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["starlight-plugin-show-latest-version-docs"]
+  "ignore": ["starlight-latest-version-docs"]
 }

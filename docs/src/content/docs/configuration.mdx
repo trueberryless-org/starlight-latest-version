@@ -1,24 +1,24 @@
 ---
 title: Configuration
-description: An overview of all the configuration options supported by the Starlight Plugin Show Latest Version plugin.
+description: An overview of all the configuration options supported by the Starlight Latest Version plugin.
 ---
 
 import { Badge } from "@astrojs/starlight/components";
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-The Starlight Plugin Show Latest Version plugin can be configured inside the `astro.config.mjs` configuration file of your project:
+The Starlight Latest Version plugin can be configured inside the `astro.config.mjs` configuration file of your project:
 
 ```js {11}
 // astro.config.mjs
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
-import starlightPluginShowLatestVersion from "starlight-plugin-show-latest-version";
+import starlightLatestVersion from "starlight-latest-version";
 
 export default defineConfig({
   integrations: [
     starlight({
       plugins: [
-        starlightPluginShowLatestVersion({
+        starlightLatestVersion({
           // Configuration options go here.
         }),
       ],
@@ -30,33 +30,33 @@ export default defineConfig({
 
 ## Configuration options
 
-The Starlight Plugin Show Latest Version plugin accepts the following configuration options:
+The Starlight Latest Version plugin accepts the following configuration options:
 
 ### `source`
 
-**Type:** `{ type: "npm" | "github" | "gitlab", slug: string }`  
+**Type:** `{ type: "npm" | "github" | "gitlab", slug: string }`
 **Required**
 
-Provide the source where your package is released. 
+Provide the source where your package is released.
 This is necessary to fetch the latest version of your package.
 
 <div id="repo">
 :::note
-Please note that the `repo` configuration has been <span style="color: var(--sl-color-red)">removed</span> in favour of the new `source` configuration object. To upgrade the plugin, please follow the [upgrade guide](https://github.com/trueberryless-org/starlight-plugin-show-latest-version/releases/tag/starlight-plugin-show-latest-version%400.3.0).
+Please note that the `repo` configuration has been <span style="color: var(--sl-color-red)">removed</span> in favour of the new `source` configuration object. To upgrade the plugin, please follow the [upgrade guide](https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-latest-version%400.3.0).
 :::
 </div>
 
 #### `type`
 
-**Type:** `"npm" | "github" | "gitlab"`  
+**Type:** `"npm" | "github" | "gitlab"`
 **Default:** `"npm"`
 
-The type of the source where your package is released. 
+The type of the source where your package is released.
 You can choose between `"npm"`, `"github"` or `"gitlab"`. This allows you to better customise the plugin to where you publish and release your packages.
 
 #### `slug`
 
-**Type:** `string`  
+**Type:** `string`
 **Required**
 
 The slug of the source where your package is released.
@@ -64,44 +64,44 @@ Depending on the [source `type`](#type), the slug must follow the syntax:
 
 <Tabs>
   <TabItem label="NPM">
-  
+
   ```ansi
   {[36mpackage[0m}
   ```
 
-  Here is an example for [this exact package](https://www.npmjs.com/package/starlight-plugin-show-latest-version):
+  Here is an example for [this exact package](https://www.npmjs.com/package/starlight-latest-version):
 
   ```ts
-  starlightPluginShowLatestVersion({
+  starlightLatestVersion({
     source: {
       type: "npm",
-      slug: "starlight-plugin-show-latest-version",
+      slug: "starlight-latest-version",
     },
   }),
   ```
-  
-  
+
+
   </TabItem>
   <TabItem label="GitHub">
-  
+
   ```ansi
   {[34mowner[0m}/{[36mrepo[0m}
   ```
 
-  Here is an example for [this exact repo](https://github.com/trueberryless-org/starlight-plugin-show-latest-version):
+  Here is an example for [this exact repo](https://github.com/trueberryless-org/starlight-latest-version):
 
   ```ts
-  starlightPluginShowLatestVersion({
+  starlightLatestVersion({
     source: {
       type: "github",
-      slug: "trueberryless-org/starlight-plugin-show-latest-version",
+      slug: "trueberryless-org/starlight-latest-version",
     },
   }),
   ```
-  
+
   </TabItem>
   <TabItem label="GitLab">
-  
+
   ```ansi
   {[34mowner[0m}/{[36mrepo[0m}
   ```
@@ -109,27 +109,27 @@ Depending on the [source `type`](#type), the slug must follow the syntax:
   Here is an example for [the GitLab repo](https://gitlab.com/gitlab-org/gitlab):
 
   ```ts
-  starlightPluginShowLatestVersion({
+  starlightLatestVersion({
     source: {
       type: "gitlab",
       slug: "gitlab-org/gitlab",
     },
   }),
   ```
-  
+
   </TabItem>
 </Tabs>
 
 ### `badge`
 
-**Type:** `object`  
+**Type:** `object`
 **Default:** `{ variant: "default", size: "medium" }`
 
 Customize the badge used to display the latest version of your Starlight plugin.
 
 #### `variant`
 
-**Type:** `"default" | "note" | "danger" | "success" | "caution" | "tip"`  
+**Type:** `"default" | "note" | "danger" | "success" | "caution" | "tip"`
 **Default:** `"default"`
 
 The variant of the badge to use.
@@ -145,7 +145,7 @@ Here you can see how the different variants look like:
 
 #### `size`
 
-**Type:** `"small" | "medium" | "large"`  
+**Type:** `"small" | "medium" | "large"`
 **Default:** `"medium"`
 
 The size of the badge to use.
@@ -158,7 +158,7 @@ Here you can see how the different sizes look like:
 
 ### `showInSiteTitle`
 
-**Type:** `"false" | "true" | "deferred"`  
+**Type:** `"false" | "true" | "deferred"`
 **Default:** `"false"`
 
 Whether to show the latest version of your Starlight plugin in the site title. By default, the plugin does not show the latest version in the site title.
@@ -171,25 +171,25 @@ For example, you can add the [Node adapter](https://docs.astro.build/en/guides/i
 
 <Tabs syncKey="pkg">
   <TabItem label="npm">
-  
+
   ```sh
   npx astro add node
   ```
-  
+
   </TabItem>
   <TabItem label="pnpm">
-  
+
   ```sh
   pnpm astro add node
   ```
-  
+
   </TabItem>
   <TabItem label="yarn">
-  
+
   ```sh
   yarn astro add node
   ```
-  
+
   </TabItem>
 </Tabs>
 
@@ -199,6 +199,6 @@ For example, you can add the [Node adapter](https://docs.astro.build/en/guides/i
 
 Override the regex pattern used to extract the version from the `tag_name` of the latest release on GitHub.
 
-This is useful if your `tag_name` does not follow best practice and only necessary in rare cases. Nonetheless, it's supported by the Starlight Plugin Show Latest Version plugin.
+This is useful if your `tag_name` does not follow best practice and only necessary in rare cases. Nonetheless, it's supported by the Starlight Latest Version plugin.
 
 Read more about how the version tag is being extracted from the GitHub release [here](/version-extraction-algorithm).

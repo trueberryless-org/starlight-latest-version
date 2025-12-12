@@ -47,11 +47,11 @@ importers:
       starlight-links-validator:
         specifier: ^0.14.3
         version: 0.14.3(@astrojs/starlight@0.33.2(astro@5.13.2(@netlify/blobs@10.0.10)(@types/node@24.3.1)(jiti@2.5.1)(rollup@4.50.0)(typescript@5.9.2)(yaml@2.8.1)))
-      starlight-plugin-show-latest-version:
+      starlight-latest-version:
         specifier: workspace:*
-        version: link:../packages/starlight-plugin-show-latest-version
+        version: link:../packages/starlight-latest-version
 
-  packages/starlight-plugin-show-latest-version:
+  packages/starlight-latest-version:
     devDependencies:
       '@astrojs/starlight':
         specifier: ^0.33.0
