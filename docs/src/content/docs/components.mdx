@@ -79,7 +79,7 @@ import VersionBadge from "starlight-latest-version/components/VersionBadge.astro
 You can opt-in to use the [`server:defer`](https://docs.astro.build/en/reference/directives-reference/#serverdefer) directive to delay rendering until the content of the component is available if a [server adapter](https://docs.astro.build/en/guides/on-demand-rendering/#server-adapters) is configured. This is the recommended approach if your docs do not get rebuilt every time a new version is released.
 
 ```mdx
-import VersionBadge from "starlight-latest-version/components/Version.astro";
+import VersionBadge from "starlight-latest-version/components/VersionBadge.astro";
 
 <VersionBadge server:defer />
 ```
@@ -93,7 +93,7 @@ import VersionBadge from "starlight-latest-version/components/Version.astro";
 While the content is loading you can ["slot in"](https://docs.astro.build/en/guides/server-islands/#server-island-fallback-content) fallback content:
 
 ```mdx
-import VersionBadge from "starlight-latest-version/components/Version.astro";
+import VersionBadge from "starlight-latest-version/components/VersionBadge.astro";
 
 <VersionBadge server:defer>
   <Badge text={"Loading..."} variant="default" size="medium" slot="fallback" />
