@@ -20,14 +20,14 @@ const configSchema = z.object({
 
 export function validateConfig(
   userConfig: unknown
-): StarlightPluginShowLatestVersionConfig {
+): starlightLatestVersionConfig {
   const config = configSchema.safeParse(userConfig);
 
   if (!config.success) {
     const errors = config.error.flatten();
 
     throw new AstroError(
-      `Invalid @trueberryless-org/starlight-plugin-show-latest-version configuration:
+      `Invalid @trueberryless-org/starlight-latest-version configuration:
       
       ${errors.formErrors.map((formError) => ` - ${formError}`).join("\n")}
       ${Object.entries(errors.fieldErrors)
@@ -37,16 +37,16 @@ export function validateConfig(
         )
         .join("\n")}
         `,
-      `See the error report above for more informations.\n\nIf you believe this is a bug, please file an issue at https://github.com/trueberryless-org/starlight-plugin-show-latest-version/issues/new`
+      `See the error report above for more informations.\n\nIf you believe this is a bug, please file an issue at https://github.com/trueberryless-org/starlight-latest-version/issues/new`
     );
   }
 
   return config.data;
 }
 
-export type StarlightPluginShowLatestVersionUserConfig = z.input<
+export type starlightLatestVersionUserConfig = z.input<
   typeof configSchema
 >;
-export type StarlightPluginShowLatestVersionConfig = z.output<
+export type starlightLatestVersionConfig = z.output<
   typeof configSchema
 >;

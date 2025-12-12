@@ -1,25 +1,25 @@
 import type { StarlightPlugin } from "@astrojs/starlight/types";
 
 import {
-  type StarlightPluginShowLatestVersionConfig,
-  type StarlightPluginShowLatestVersionUserConfig,
+  type starlightLatestVersionConfig,
+  type starlightLatestVersionUserConfig,
   validateConfig,
 } from "./libs/config";
 import { overrideStarlightComponent } from "./libs/starlight";
-import { vitePluginStarlightPluginShowLatestVersionConfig } from "./libs/vite";
+import { vitePluginstarlightLatestVersionConfig } from "./libs/vite";
 
 export type {
-  StarlightPluginShowLatestVersionConfig,
-  StarlightPluginShowLatestVersionUserConfig,
+  starlightLatestVersionConfig,
+  starlightLatestVersionUserConfig,
 };
 
-export default function starlightPluginShowLatestVersion(
-  userConfig?: StarlightPluginShowLatestVersionUserConfig
+export default function starlightLatestVersion(
+  userConfig?: starlightLatestVersionUserConfig
 ): StarlightPlugin {
   const config = validateConfig(userConfig);
 
   return {
-    name: "starlight-plugin-show-latest-version",
+    name: "starlight-latest-version",
     hooks: {
       "config:setup"({
         addIntegration,
@@ -42,13 +42,13 @@ export default function starlightPluginShowLatestVersion(
         });
 
         addIntegration({
-          name: "starlight-plugin-show-latest-version-integration",
+          name: "starlight-latest-version-integration",
           hooks: {
             "astro:config:setup": ({ updateConfig }) => {
               updateConfig({
                 vite: {
                   plugins: [
-                    vitePluginStarlightPluginShowLatestVersionConfig(config),
+                    vitePluginstarlightLatestVersionConfig(config),
                   ],
                 },
               });

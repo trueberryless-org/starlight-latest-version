@@ -1,6 +1,6 @@
-# `starlight-plugin-show-latest-version`
+# `starlight-latest-version`
 
-Show the latest released version of your package in your documentation.
+Show the latest released version of your package in your Starlight documentation.
 
 ## Documentation
 

@@ -44,4 +44,4 @@ Thumbs.db
 .changeset
 
 # Reporting error but works
-/packages/starlight-plugin-show-latest-version/components/DynamicVersionBadge.astro
+/packages/starlight-latest-version/components/DynamicVersionBadge.astro

@@ -1,11 +1,11 @@
 import { SEMVER_PATTERN } from "../consts/semantic.version.pattern";
-import { extractVersion, latestReleaseApis } from "../libs/urlBuilder";
-import type { StarlightPluginShowLatestVersionConfig } from "./config";
-import type { StarlightPluginShowLatestVersionContext } from "./types";
+import { extractVersion, latestReleaseApis } from "./urlBuilder";
+import type { starlightLatestVersionConfig } from "./config";
+import type { starlightLatestVersionContext } from "./types";
 
 export default async function fetchVersion(
-  config: StarlightPluginShowLatestVersionConfig
-): Promise<StarlightPluginShowLatestVersionContext> {
+  config: starlightLatestVersionConfig
+): Promise<starlightLatestVersionContext> {
   const apiUrl = latestReleaseApis[config.source.type](config.source.slug);
 
   try {
@@ -40,7 +40,7 @@ export default async function fetchVersion(
     const prefix = prefixMatch ? prefixMatch[1] : undefined;
     const hasVPrefix = tagName.startsWith("v") || tagName.includes("@v");
 
-    const context: StarlightPluginShowLatestVersionContext = {
+    const context: starlightLatestVersionContext = {
       versionAvailable: true,
       version,
       versionWithoutPrefix,

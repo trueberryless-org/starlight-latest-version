@@ -1,15 +1,15 @@
 {
-  "name": "starlight-plugin-show-latest-version-monorepo",
+  "name": "starlight-latest-version-monorepo",
   "version": "1.0.0",
   "private": true,
-  "description": "Show the latest released version of your package in your documentation.",
-  "homepage": "https://github.com/trueberryless-org/starlight-plugin-show-latest-version",
+  "description": "Show the latest released version of your package in your Starlight documentation.",
+  "homepage": "https://github.com/trueberryless-org/starlight-latest-version",
   "bugs": {
-    "url": "https://github.com/trueberryless-org/starlight-plugin-show-latest-version/issues"
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trueberryless-org/starlight-plugin-show-latest-version.git"
+    "url": "https://github.com/trueberryless-org/starlight-latest-version.git"
   },
   "license": "MIT",
   "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",

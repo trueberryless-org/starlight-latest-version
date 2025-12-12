@@ -1,9 +1,9 @@
 ---
-import type { StarlightPluginShowLatestVersionContext } from "../libs/types";
+import type { starlightLatestVersionContext } from "../libs/types";
 import { Badge } from "@astrojs/starlight/components";
 import fetchVersion from "../libs/utils";
 import { releasePageUrls } from "../libs/urlBuilder";
-import pluginConfig from "virtual:starlight-plugin-show-latest-version-config";
+import pluginConfig from "virtual:starlight-latest-version-config";
 
 interface Props {
   useCache?: boolean;
@@ -11,7 +11,7 @@ interface Props {
 
 const { useCache = false } = Astro.props;
 
-let version: StarlightPluginShowLatestVersionContext = {
+let version: starlightLatestVersionContext = {
   versionAvailable: false,
 };
 if (useCache) {
@@ -51,35 +51,35 @@ const sourceUrl = releasePageUrls[pluginConfig.source.type](
 
 {
   version.versionAvailable && (
-    <starlight-plugin-show-latest-version>
-      <a href={sourceUrl} id="starlight-plugin-show-latest-version-link">
+    <starlight-latest-version>
+      <a href={sourceUrl} id="starlight-latest-version-link">
         <Badge
           text={version.version}
           variant={pluginConfig.badge.variant}
           size={pluginConfig.badge.size}
-          id="starlight-plugin-show-latest-version-badge"
+          id="starlight-latest-version-badge"
         />
       </a>
-    </starlight-plugin-show-latest-version>
+    </starlight-latest-version>
   )
 }
 {
   !version.versionAvailable && (
-    <starlight-plugin-show-latest-version>
-      <a href={sourceUrl} id="starlight-plugin-show-latest-version-link">
+    <starlight-latest-version>
+      <a href={sourceUrl} id="starlight-latest-version-link">
         <Badge
           text="N/A"
           variant={pluginConfig.badge.variant}
           size={pluginConfig.badge.size}
-          id="starlight-plugin-show-latest-version-badge"
+          id="starlight-latest-version-badge"
         />
       </a>
-    </starlight-plugin-show-latest-version>
+    </starlight-latest-version>
   )
 }
 
 <style>
-  #starlight-plugin-show-latest-version-link {
+  #starlight-latest-version-link {
     display: flex;
     align-items: center;
     text-decoration: none;
