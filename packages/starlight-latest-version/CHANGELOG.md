@@ -1,5 +1,11 @@
 # starlight-latest-version
 
+## 0.6.1
+
+### Patch Changes
+
+- [#64](https://github.com/trueberryless-org/starlight-latest-version/pull/64) [`187cf39`](https://github.com/trueberryless-org/starlight-latest-version/commit/187cf39b5700cb6618a942b23edad659a608afb1) Thanks [@trueberryless](https://github.com/trueberryless)! - Clean up package metadata.
+
 ## 0.6.0
 
 ### Minor Changes
