@@ -9,7 +9,7 @@
     "version",
     "latest"
   ],
-  "homepage": "https://github.com/trueberryless-org/starlight-latest-version",
+  "homepage": "https://starlight-latest-version.trueberryless.org/",
   "bugs": {
     "url": "https://github.com/trueberryless-org/starlight-latest-version/issues"
   },
@@ -44,7 +44,7 @@
     "@astrojs/starlight": ">=0.32"
   },
   "engines": {
-    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
+    "node": ">=22.12.0"
   },
   "publishConfig": {
     "access": "public"
