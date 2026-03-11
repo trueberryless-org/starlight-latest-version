@@ -9,11 +9,6 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Starlight Latest Version",
-      logo: {
-        light: "./src/assets/logo-light.png",
-        dark: "./src/assets/logo-dark.png",
-        replacesTitle: true,
-      },
       editLink: {
         baseUrl:
           "https://github.com/trueberryless-org/starlight-latest-version/edit/main/docs/",
