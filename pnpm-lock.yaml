@@ -27,35 +27,35 @@ importers:
   docs:
     dependencies:
       '@astrojs/netlify':
-        specifier: ^6.6.3
+        specifier: ^6.6.5
         version: 6.6.5(@types/node@25.0.1)(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))(jiti@2.5.1)(rollup@4.53.3)(yaml@2.8.1)
       '@astrojs/starlight':
-        specifier: ^0.37.1
-        version: 0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+        specifier: ^0.38.1
+        version: 0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
       '@trueberryless-org/starlight-plugins-docs-components':
-        specifier: ^0.4.3
-        version: 0.4.3(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+        specifier: ^0.5.0
+        version: 0.5.0(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))
       astro:
-        specifier: ^5.16.5
+        specifier: ^5.18.1
         version: 5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
       sharp:
         specifier: ^0.34.5
         version: 0.34.5
       starlight-contributor-list:
-        specifier: ^0.3.1
-        version: 0.3.2(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))
+        specifier: ^0.3.2
+        version: 0.3.2(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))
       starlight-latest-version:
         specifier: workspace:*
         version: link:../packages/starlight-latest-version
       starlight-links-validator:
-        specifier: ^0.19.2
-        version: 0.19.2(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+        specifier: ^0.20.1
+        version: 0.20.1(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
 
   packages/starlight-latest-version:
     devDependencies:
       '@astrojs/starlight':
-        specifier: ^0.37.1
-        version: 0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@22.10.2)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+        specifier: ^0.38.1
+        version: 0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@22.10.2)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
       '@jest/globals':
         specifier: ^29.7.0
         version: 29.7.0
@@ -63,7 +63,7 @@ importers:
         specifier: ^29.5.14
         version: 29.5.14
       astro:
-        specifier: ^5.16.5
+        specifier: ^5.18.1
         version: 5.18.1(@netlify/blobs@10.7.1)(@types/node@22.10.2)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
       jest:
         specifier: ^29.7.0
@@ -82,18 +82,14 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@astro-community/astro-embed-twitter@0.5.8':
-    resolution: {integrity: sha512-O2ptQPw+DfipukK8czjJcTcyVgDsrs3OmrHbc3YmWRglaUTOpSTImzPo076POyNBSWjLaRKloul81DFiAMNjTA==}
-    peerDependencies:
-      astro: ^2.0.0 || ^3.0.0-beta || ^4.0.0-beta || ^5.0.0-beta
+  '@astro-community/astro-embed-twitter@0.5.11':
+    resolution: {integrity: sha512-6cmyQY4LVVJj6x7qC6XrhWcxNffLvR+QGE/iw5HTOtAn60AStr6u+IX2Txpy6N6bta0DLjGqhTBhkC3NxmVKJg==}
 
-  '@astro-community/astro-embed-utils@0.1.3':
-    resolution: {integrity: sha512-eiMO+vfCdE9GtW6qE7X5Xl6YCKZDCoXJEWqRofQcoC3GHjqN2/WhJlnaxNVRq3demSO03UNtho57Em5p7o7AOA==}
+  '@astro-community/astro-embed-utils@0.2.0':
+    resolution: {integrity: sha512-Ia70AMCFOUOSoaMfMaK7Ovk7VyIY4opwzBJoA6GeL+omkvpFwDbSWmA8MOiMF4gJC0j/1dgrEir+txIb+WvsCA==}
 
-  '@astro-community/astro-embed-youtube@0.5.6':
-    resolution: {integrity: sha512-/mRfCl/eTBUz0kmjD1psOy0qoDDBorVp0QumUacjFcIkBullYtbeFQ2ZGZ+3N/tA6cR/OIyzr2QA4dQXlY6USg==}
-    peerDependencies:
-      astro: ^2.0.0 || ^3.0.0-beta || ^4.0.0-beta || ^5.0.0-beta
+  '@astro-community/astro-embed-youtube@0.5.10':
+    resolution: {integrity: sha512-hVlx77KQLjKzElVQnrU5znQ5/E60keVSAPrhuWvQQHuqva5auJtt8YBpOThkwDMuEKXjQybEF1/3C07RZ8MAOQ==}
 
   '@astrojs/compiler@2.11.0':
     resolution: {integrity: sha512-zZOO7i+JhojO8qmlyR/URui6LyfHJY6m+L9nwyX5GiKD78YoRaZ5tzz6X0fkl+5bD3uwlDHayf6Oe8Fu36RKNg==}
@@ -104,14 +100,20 @@ packages:
   '@astrojs/internal-helpers@0.7.6':
     resolution: {integrity: sha512-GOle7smBWKfMSP8osUIGOlB5kaHdQLV3foCsf+5Q9Wsuu+C6Fs3Ez/ttXmhjZ1HkSgsogcM1RXSjjOVieHq16Q==}
 
+  '@astrojs/internal-helpers@0.8.0':
+    resolution: {integrity: sha512-J56GrhEiV+4dmrGLPNOl2pZjpHXAndWVyiVDYGDuw6MWKpBSEMLdFxHzeM/6sqaknw9M+HFfHZAcvi3OfT3D/w==}
+
   '@astrojs/markdown-remark@6.3.11':
     resolution: {integrity: sha512-hcaxX/5aC6lQgHeGh1i+aauvSwIT6cfyFjKWvExYSxUhZZBBdvCliOtu06gbQyhbe0pGJNoNmqNlQZ5zYUuIyQ==}
 
-  '@astrojs/mdx@4.3.14':
-    resolution: {integrity: sha512-FBrqJQORVm+rkRa2TS5CjU9PBA6hkhrwLVBSS9A77gN2+iehvjq1w6yya/d0YKC7osiVorKkr3Qd9wNbl0ZkGA==}
-    engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
+  '@astrojs/markdown-remark@7.0.0':
+    resolution: {integrity: sha512-jTAXHPy45L7o1ljH4jYV+ShtOHtyQUa1mGp3a5fJp1soX8lInuTJQ6ihmldHzVM4Q7QptU4SzIDIcKbBJO7sXQ==}
+
+  '@astrojs/mdx@5.0.0':
+    resolution: {integrity: sha512-J4rW6eT+qgVw7+RXdBYO4vYyWGeXXQp8wop9dXsOlLzIsVSxyttMCgkGCWvIR2ogBqKqeYgI6YDW93PaDHkCaA==}
+    engines: {node: ^20.19.1 || >=22.12.0}
     peerDependencies:
-      astro: ^5.0.0
+      astro: ^6.0.0-alpha.0
 
   '@astrojs/netlify@6.6.5':
     resolution: {integrity: sha512-TE3GABF144NxJ/A8jUSzKlSRzaraPKaBba+3bY93XA8ejhTXoraqHdYSWnp/PvfMWYZnbHtEaW/GgKlE20h+EA==}
@@ -122,13 +124,17 @@ packages:
     resolution: {integrity: sha512-q8VwfU/fDZNoDOf+r7jUnMC2//H2l0TuQ6FkGJL8vD8nw/q5KiL3DS1KKBI3QhI9UQhpJ5dc7AtqfbXWuOgLCQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
 
+  '@astrojs/prism@4.0.0':
+    resolution: {integrity: sha512-NndtNPpxaGinRpRytljGBvYHpTOwHycSZ/c+lQi5cHvkqqrHKWdkPEhImlODBNmbuB+vyQUNUDXyjzt66CihJg==}
+    engines: {node: ^20.19.1 || >=22.12.0}
+
   '@astrojs/sitemap@3.7.1':
     resolution: {integrity: sha512-IzQqdTeskaMX+QDZCzMuJIp8A8C1vgzMBp/NmHNnadepHYNHcxQdGLQZYfkbd2EbRXUfOS+UDIKx8sKg0oWVdw==}
 
-  '@astrojs/starlight@0.37.7':
-    resolution: {integrity: sha512-KyBnou8aKIlPJUSNx6a1SN7XyH22oj/VAvTGC+Edld4Bnei1A//pmCRTBvSrSeoGrdUjK0ErFUfaEhhO1bPfDg==}
+  '@astrojs/starlight@0.38.1':
+    resolution: {integrity: sha512-CATPH4Dy44OYAJhoyUHh6NqpColWEVufanGVwnM0l/bcaNMo5V/rypwL0Vu0Edp+ZIXE7/1DA9CrNj5jmCVSLQ==}
     peerDependencies:
-      astro: ^5.5.0
+      astro: ^6.0.0
 
   '@astrojs/telemetry@3.3.0':
     resolution: {integrity: sha512-UFBgfeldP06qu6khs/yY+q1cDAaArM2/7AEIqQ9Cuvf7B1hNLq0xDrZkct+QoIGyjq56y8IaE2I3CTvG99mlhQ==}
@@ -139,10 +145,6 @@ packages:
 
   '@babel/code-frame@7.26.2':
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/code-frame@7.27.1':
-    resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
     engines: {node: '>=6.9.0'}
 
   '@babel/code-frame@7.29.0':
@@ -206,11 +208,6 @@ packages:
   '@babel/helpers@7.26.0':
     resolution: {integrity: sha512-tbhNuIxNcVb21pInl3ZSjksLCvgdZy9KwJ8brv993QtIVKJBBkYXz4q4ZbAv31GdnC+R90np23L5FbEBlthAEw==}
     engines: {node: '>=6.9.0'}
-
-  '@babel/parser@7.28.5':
-    resolution: {integrity: sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ==}
-    engines: {node: '>=6.0.0'}
-    hasBin: true
 
   '@babel/parser@7.29.0':
     resolution: {integrity: sha512-IyDgFV5GeDUVX4YdF/3CPULtVGSXXMLh1xVIgdCgxApktqnQV0r7/8Nqthg+8YLGaAtdyIlo2qIdZrbCv4+7ww==}
@@ -326,10 +323,6 @@ packages:
 
   '@babel/traverse@7.29.0':
     resolution: {integrity: sha512-4HPiQr0X7+waHfyXPZpWPfWL/J7dcN1mx9gL6WdQVMbPnF3+ZhSMs8tCxN7oHddJE9fhNE7+lxdnlyemKfJRuA==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/types@7.28.5':
-    resolution: {integrity: sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/types@7.29.0':
@@ -759,11 +752,11 @@ packages:
   '@fastify/busboy@3.2.0':
     resolution: {integrity: sha512-m9FVDXU3GT2ITSe0UaMA5rU3QkfC/UXtCU8y0gSN/GugTqtVldOBWIB5V6V3sbmenVZUIpU6f+mPEO2+m5iTaA==}
 
-  '@hideoo/starlight-plugins-docs-components@0.4.0':
-    resolution: {integrity: sha512-MbpFyLriouQVxyDmyq5Gaa1TIrFrJm3krR8QwPIbhEOVtJIf0Xi85gJAYQgt8uBH8ul98foq0sSsIAp5MWIkAQ==}
-    engines: {node: '>=18'}
+  '@hideoo/starlight-plugins-docs-components@0.4.2':
+    resolution: {integrity: sha512-Sgq4HgNsrL/t/D7RjkbD+eLnyqXGdTSq+mW91K3BfI3HVYnwvR/uuBKiSJGcQ7gxf7SUiD0UDz3Jsv0SeCPK4A==}
+    engines: {node: '>=22'}
     peerDependencies:
-      '@astrojs/starlight': '>=0.30.0'
+      '@astrojs/starlight': '>=0.38.0'
 
   '@humanwhocodes/momoa@2.0.4':
     resolution: {integrity: sha512-RE815I4arJFtt+FVeU1Tgp9/Xvecacji8w/V6XtXsWWH/wz/eNkNbhb+ny/+PlVZjV0rxQpRSQKNKE3lcktHEA==}
@@ -1017,9 +1010,6 @@ packages:
   '@jridgewell/set-array@1.2.1':
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
     engines: {node: '>=6.0.0'}
-
-  '@jridgewell/sourcemap-codec@1.5.0':
-    resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
@@ -1479,20 +1469,48 @@ packages:
   '@shikijs/core@3.23.0':
     resolution: {integrity: sha512-NSWQz0riNb67xthdm5br6lAkvpDJRTgB36fxlo37ZzM2yq0PQFFzbd8psqC2XMPgCzo1fW6cVi18+ArJ44wqgA==}
 
+  '@shikijs/core@4.0.2':
+    resolution: {integrity: sha512-hxT0YF4ExEqB8G/qFdtJvpmHXBYJ2lWW7qTHDarVkIudPFE6iCIrqdgWxGn5s+ppkGXI0aEGlibI0PAyzP3zlw==}
+    engines: {node: '>=20'}
+
   '@shikijs/engine-javascript@3.23.0':
     resolution: {integrity: sha512-aHt9eiGFobmWR5uqJUViySI1bHMqrAgamWE1TYSUoftkAeCCAiGawPMwM+VCadylQtF4V3VNOZ5LmfItH5f3yA==}
+
+  '@shikijs/engine-javascript@4.0.2':
+    resolution: {integrity: sha512-7PW0Nm49DcoUIQEXlJhNNBHyoGMjalRETTCcjMqEaMoJRLljy1Bi/EGV3/qLBgLKQejdspiiYuHGQW6dX94Nag==}
+    engines: {node: '>=20'}
 
   '@shikijs/engine-oniguruma@3.23.0':
     resolution: {integrity: sha512-1nWINwKXxKKLqPibT5f4pAFLej9oZzQTsby8942OTlsJzOBZ0MWKiwzMsd+jhzu8YPCHAswGnnN1YtQfirL35g==}
 
+  '@shikijs/engine-oniguruma@4.0.2':
+    resolution: {integrity: sha512-UpCB9Y2sUKlS9z8juFSKz7ZtysmeXCgnRF0dlhXBkmQnek7lAToPte8DkxmEYGNTMii72zU/lyXiCB6StuZeJg==}
+    engines: {node: '>=20'}
+
   '@shikijs/langs@3.23.0':
     resolution: {integrity: sha512-2Ep4W3Re5aB1/62RSYQInK9mM3HsLeB91cHqznAJMuylqjzNVAVCMnNWRHFtcNHXsoNRayP9z1qj4Sq3nMqYXg==}
+
+  '@shikijs/langs@4.0.2':
+    resolution: {integrity: sha512-KaXby5dvoeuZzN0rYQiPMjFoUrz4hgwIE+D6Du9owcHcl6/g16/yT5BQxSW5cGt2MZBz6Hl0YuRqf12omRfUUg==}
+    engines: {node: '>=20'}
+
+  '@shikijs/primitive@4.0.2':
+    resolution: {integrity: sha512-M6UMPrSa3fN5ayeJwFVl9qWofl273wtK1VG8ySDZ1mQBfhCpdd8nEx7nPZ/tk7k+TYcpqBZzj/AnwxT9lO+HJw==}
+    engines: {node: '>=20'}
 
   '@shikijs/themes@3.23.0':
     resolution: {integrity: sha512-5qySYa1ZgAT18HR/ypENL9cUSGOeI2x+4IvYJu4JgVJdizn6kG4ia5Q1jDEOi7gTbN4RbuYtmHh0W3eccOrjMA==}
 
+  '@shikijs/themes@4.0.2':
+    resolution: {integrity: sha512-mjCafwt8lJJaVSsQvNVrJumbnnj1RI8jbUKrPKgE6E3OvQKxnuRoBaYC51H4IGHePsGN/QtALglWBU7DoKDFnA==}
+    engines: {node: '>=20'}
+
   '@shikijs/types@3.23.0':
     resolution: {integrity: sha512-3JZ5HXOZfYjsYSk0yPwBrkupyYSLpAE26Qc0HLghhZNGTZg/SKxXIIgoxOpmmeQP0RRSDJTk1/vPfw9tbw+jSQ==}
+
+  '@shikijs/types@4.0.2':
+    resolution: {integrity: sha512-qzbeRooUTPnLE+sHD/Z8DStmaDgnbbc/pMrU203950aRqjX/6AFHeDYT+j00y2lPdz0ywJKx7o/7qnqTivtlXg==}
+    engines: {node: '>=20'}
 
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
@@ -1530,11 +1548,11 @@ packages:
       svelte:
         optional: true
 
-  '@trueberryless-org/starlight-plugins-docs-components@0.4.3':
-    resolution: {integrity: sha512-CA7oZiy67p1/IWucjueyftbT+eo/Q+TWU7/6+v5c31aGZBIkYVsqCj0OKnpzO6n6T05ZuP8RdCudatplVTJvHA==}
-    engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
+  '@trueberryless-org/starlight-plugins-docs-components@0.5.0':
+    resolution: {integrity: sha512-LHbaLNtHr38U7+rxx+oX4zpvk1j5dfbtvGZQoGYdivph3Vib5DYLMWK9zmZ6PVDne+vtO8luT8yKOSAtkc3JRQ==}
+    engines: {node: '>=22.12.0'}
     peerDependencies:
-      '@astrojs/starlight': '>=0.32'
+      '@astrojs/starlight': '>=0.38'
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -1605,8 +1623,8 @@ packages:
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
-  '@types/picomatch@3.0.2':
-    resolution: {integrity: sha512-n0i8TD3UDB7paoMMxA3Y65vUncFJXjcUf7lQY7YyKGl6031FNjfsLs6pdLFCy2GNFxItPJG8GvvpbZc2skH7WA==}
+  '@types/picomatch@4.0.2':
+    resolution: {integrity: sha512-qHHxQ+P9PysNEGbALT8f8YOSHW0KJu6l2xU8DYY0fu/EmGxXdVnuTLvFUvBgPJMSqXq29SYHveejeAha+4AYgA==}
 
   '@types/retry@0.12.2':
     resolution: {integrity: sha512-XISRgDJ2Tc5q4TRqvgJtzsRkFYNJzZrhTdtMoGVBttwzzQJkPnS3WWTFc7kuDRoPtPakl+T+OfdEUjYJj7Jbow==}
@@ -2197,9 +2215,6 @@ packages:
     resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
 
-  cssom@0.5.0:
-    resolution: {integrity: sha512-iKuQcq+NdHqlAcwUY0o/HL69XQrUaQdMjmStJ8JFmUaiiQErlhrmuigkg/CU4E2J0IyUKUrMAgl36TvN67MqTw==}
-
   data-uri-to-buffer@4.0.1:
     resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
     engines: {node: '>= 12'}
@@ -2218,9 +2233,6 @@ packages:
 
   decache@4.6.2:
     resolution: {integrity: sha512-2LPqkLeu8XWHU8qNCS3kcF6sCcb5zIzvWaAHYSvPfwhdd7mHuah29NssMzrTYyHN4F5oFy2ko9OBYxegtU0FEw==}
-
-  decode-named-character-reference@1.2.0:
-    resolution: {integrity: sha512-c6fcElNV6ShtZXmsgNgFFV5tVX2PaV4g+MOAkb8eXHvn6sryJBrZa9r0zV6+dtTyoCKxtDy5tyQ5ZwQuidtd+Q==}
 
   decode-named-character-reference@1.3.0:
     resolution: {integrity: sha512-GtpQYB283KrPp6nRw50q3U9/VfOutZOe103qlN7BPP6Ad27xYnOIWv4lPzo8HCAL+mMZofJ9KEy30fq6MfaK6Q==}
@@ -2425,6 +2437,9 @@ packages:
 
   es-module-lexer@1.7.0:
     resolution: {integrity: sha512-jEQoCwk8hyb2AZziIOLhDqpm5+2ww5uIE6lkO/6jcOCusfk6LhMHpXXfBLXTZ7Ydyt0j4VoUQv6uGNYbdW+kBA==}
+
+  es-module-lexer@2.0.0:
+    resolution: {integrity: sha512-5POEcUuZybH7IdmGsD8wlf0AI55wMecM9rVBTI/qEAy2c1kTOm3DjFYjrBdI2K3BaJjJYfYFeRtM0t9ssnRuxw==}
 
   esast-util-from-estree@2.0.0:
     resolution: {integrity: sha512-4CyanoAudUSBAn5K13H4JhsMH6L9ZP7XbLVe/dKybkxMO7eDyLsT8UHl9TRNrU2Gr9nz+FovfSIjuXWJ81uVwQ==}
@@ -2834,9 +2849,6 @@ packages:
   html-whitespace-sensitive-tag-names@3.0.1:
     resolution: {integrity: sha512-q+310vW8zmymYHALr1da4HyXUQ0zgiIwIicEfotYPWGN0OJVEN/58IJ3A4GBYcEq3LGAZqKb+ugvP0GNB9CEAA==}
 
-  htmlparser2@8.0.2:
-    resolution: {integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==}
-
   http-cache-semantics@4.2.0:
     resolution: {integrity: sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==}
 
@@ -2922,9 +2934,9 @@ packages:
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
 
-  is-absolute-url@4.0.1:
-    resolution: {integrity: sha512-/51/TKE88Lmm7Gc4/8btclNXWS+g50wXhYJq8HWIBAGUBnoAdRu1aXeh364t/O7wXDAcTJDP8PNuNKWUDWie+A==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+  is-absolute-url@5.0.0:
+    resolution: {integrity: sha512-sdJyNpBnQHuVnBunfzjAecOhZr2+A30ywfFvu3EnxtKLUWfwGgyWUmqHbGZiU6vTfHpCPm5GvLe4BAvlU9n8VQ==}
+    engines: {node: '>=20'}
 
   is-alphabetical@2.0.1:
     resolution: {integrity: sha512-FWyyY60MeTNyeSRpkM2Iry0G9hpr7/9kD40mD/cGQEuilcZYS4okz8SN2Q6rLCJ8gbCt6fN+rC+6tMGS99LaxQ==}
@@ -3297,15 +3309,12 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  linkedom@0.14.26:
-    resolution: {integrity: sha512-mK6TrydfFA7phrnp+1j57ycBwFI5bGSW6YXlw9acHoqF+mP/y+FooEYYyniOt5Ot57FSKB3iwmnuQ1UUyNLm5A==}
-
   listhen@1.9.0:
     resolution: {integrity: sha512-I8oW2+QL5KJo8zXNWX046M134WchxsXC7SawLPvRQpogCbkyQIaFxPE89A2HiwR7vAK2Dm2ERBAmyjTYGYEpBg==}
     hasBin: true
 
-  lite-youtube-embed@0.3.3:
-    resolution: {integrity: sha512-gFfVVnj6NRjxVfJKo3qoLtpi0v5mn3AcR4eKD45wrxQuxzveFJUb+7Cr6uV6n+DjO8X3p0UzPPquhGt0H/y+NA==}
+  lite-youtube-embed@0.3.4:
+    resolution: {integrity: sha512-aXgxpwK7AIW58GEbRzA8EYaY4LWvF3FKak6B9OtSJmuNyLhX2ouD4cMTxz/yR5HFInhknaYd2jLWOTRTvT8oAw==}
 
   locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
@@ -4276,6 +4285,10 @@ packages:
   shiki@3.23.0:
     resolution: {integrity: sha512-55Dj73uq9ZXL5zyeRPzHQsK7Nbyt6Y10k5s7OjuFZGMhpp4r/rsLBH0o/0fstIzX1Lep9VxefWljK/SKCzygIA==}
 
+  shiki@4.0.2:
+    resolution: {integrity: sha512-eAVKTMedR5ckPo4xne/PjYQYrU3qx78gtJZ+sHlXEg5IHhhoQhMfZVzetTYuaJS0L2Ef3AcCRzCHV8T0WI6nIQ==}
+    engines: {node: '>=20'}
+
   signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
 
@@ -4357,28 +4370,22 @@ packages:
     peerDependencies:
       '@astrojs/starlight': '>=0.30'
 
-  starlight-links-validator@0.19.2:
-    resolution: {integrity: sha512-IHeK3R78fsmv53VfRkGbXkwK1CQEUBHM9QPzBEyoAxjZ/ssi5gjV+F4oNNUppTR48iPp+lEY0MTAmvkX7yNnkw==}
-    engines: {node: '>=18.17.1'}
+  starlight-links-validator@0.20.1:
+    resolution: {integrity: sha512-bPfX9tlvkLcygIwo4nszOf7TOj1iqfZEpUss5oxRlaa3/mt7zGBHANSkanVMd0FK6VQa2oUD9MjH1DszykkwPA==}
+    engines: {node: '>=22.12.0'}
     peerDependencies:
-      '@astrojs/starlight': '>=0.32.0'
-      astro: '>=5.1.5'
+      '@astrojs/starlight': '>=0.38.0'
+      astro: '>=6.0.0'
 
-  starlight-package-managers@0.8.1:
-    resolution: {integrity: sha512-a+zGIOdbN7B4T/VaszuvW8585Aau4LSU8HlVCmBCJJwxkrGAUC9lRya4y0md5tOAFyW/gfhUNJZM8qqyMNTe7Q==}
+  starlight-package-managers@0.12.0:
+    resolution: {integrity: sha512-hAIVzOT0/Git+T2Uwckh2rs51fYiDM6/X+Z2f3LtKMSwOwm+nSUAX2Ilp7k+07LDtxYjmvfTCxhfIBt0PgOF5g==}
     engines: {node: '>=18.17.1'}
     peerDependencies:
       '@astrojs/starlight': '>=0.22.0'
 
-  starlight-showcases@0.2.0:
-    resolution: {integrity: sha512-YWJuTqArkUdVJV85VKZJ0BvKCQRu1SKtH/Cr5t6G/oIfI4IptWc92E7BmiuNnpuQ2U7TczTRidCYurPrbgQQVA==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@astrojs/starlight': '>=0.23.0'
-
-  starlight-showcases@0.3.0:
-    resolution: {integrity: sha512-jxKVE5IM0TZgRIni4YK1oKDh6C9pBh94oj2pKuhzg2/Cg1wjCrWy39U3i1bXkh6rL+Ly+ypQBPH3AD9cP6TLXA==}
-    engines: {node: '>=18'}
+  starlight-showcases@0.3.2:
+    resolution: {integrity: sha512-PX+CDIaOkgmM+KxiD+OEF0NVppbbQia7iMZ1JeHnx0yyDkZCY6U6vtzoxpklhHU/JGHrmV6qj1qxzWS74SolqQ==}
+    engines: {node: '>=22'}
     peerDependencies:
       '@astrojs/starlight': '>=0.30.0'
 
@@ -4621,9 +4628,6 @@ packages:
     resolution: {integrity: sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
-
-  uhyphen@0.2.0:
-    resolution: {integrity: sha512-qz3o9CHXmJJPGBdqzab7qAYuW8kQGKNEuoHFYrBwV6hWIMcpAmxDLXojcHfFr9US1Pe6zUswEIJIbLI610fuqA==}
 
   ulid@3.0.1:
     resolution: {integrity: sha512-dPJyqPzx8preQhqq24bBG1YNkvigm87K8kVEHCD+ruZg24t6IFEFv00xMWfxcC4djmFtiTLdFuADn4+DOz6R7Q==}
@@ -5004,25 +5008,25 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@astro-community/astro-embed-twitter@0.5.8(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
+  '@astro-community/astro-embed-twitter@0.5.11':
     dependencies:
-      '@astro-community/astro-embed-utils': 0.1.3
-      astro: 5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
+      '@astro-community/astro-embed-utils': 0.2.0
 
-  '@astro-community/astro-embed-utils@0.1.3':
-    dependencies:
-      linkedom: 0.14.26
+  '@astro-community/astro-embed-utils@0.2.0': {}
 
-  '@astro-community/astro-embed-youtube@0.5.6(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
+  '@astro-community/astro-embed-youtube@0.5.10':
     dependencies:
-      astro: 5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
-      lite-youtube-embed: 0.3.3
+      lite-youtube-embed: 0.3.4
 
   '@astrojs/compiler@2.11.0': {}
 
   '@astrojs/compiler@2.13.1': {}
 
   '@astrojs/internal-helpers@0.7.6': {}
+
+  '@astrojs/internal-helpers@0.8.0':
+    dependencies:
+      picomatch: 4.0.3
 
   '@astrojs/markdown-remark@6.3.11':
     dependencies:
@@ -5050,13 +5054,38 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.14(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@22.10.2)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
+  '@astrojs/markdown-remark@7.0.0':
     dependencies:
-      '@astrojs/markdown-remark': 6.3.11
+      '@astrojs/internal-helpers': 0.8.0
+      '@astrojs/prism': 4.0.0
+      github-slugger: 2.0.0
+      hast-util-from-html: 2.0.3
+      hast-util-to-text: 4.0.2
+      js-yaml: 4.1.1
+      mdast-util-definitions: 6.0.0
+      rehype-raw: 7.0.0
+      rehype-stringify: 10.0.1
+      remark-gfm: 4.0.1
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.2
+      remark-smartypants: 3.0.2
+      shiki: 4.0.2
+      smol-toml: 1.6.0
+      unified: 11.0.5
+      unist-util-remove-position: 5.0.0
+      unist-util-visit: 5.1.0
+      unist-util-visit-parents: 6.0.2
+      vfile: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@astrojs/mdx@5.0.0(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@22.10.2)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
+    dependencies:
+      '@astrojs/markdown-remark': 7.0.0
       '@mdx-js/mdx': 3.1.1
       acorn: 8.16.0
       astro: 5.18.1(@netlify/blobs@10.7.1)(@types/node@22.10.2)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
-      es-module-lexer: 1.7.0
+      es-module-lexer: 2.0.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
       piccolore: 0.1.3
@@ -5069,13 +5098,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.14(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
+  '@astrojs/mdx@5.0.0(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
     dependencies:
-      '@astrojs/markdown-remark': 6.3.11
+      '@astrojs/markdown-remark': 7.0.0
       '@mdx-js/mdx': 3.1.1
       acorn: 8.16.0
       astro: 5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
-      es-module-lexer: 1.7.0
+      es-module-lexer: 2.0.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
       piccolore: 0.1.3
@@ -5139,16 +5168,20 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
+  '@astrojs/prism@4.0.0':
+    dependencies:
+      prismjs: 1.30.0
+
   '@astrojs/sitemap@3.7.1':
     dependencies:
       sitemap: 9.0.1
       stream-replace-string: 2.0.0
       zod: 4.3.6
 
-  '@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@22.10.2)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
+  '@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@22.10.2)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
     dependencies:
-      '@astrojs/markdown-remark': 6.3.11
-      '@astrojs/mdx': 4.3.14(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@22.10.2)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+      '@astrojs/markdown-remark': 7.0.0
+      '@astrojs/mdx': 5.0.0(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@22.10.2)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
       '@astrojs/sitemap': 3.7.1
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
@@ -5179,10 +5212,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
+  '@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
     dependencies:
-      '@astrojs/markdown-remark': 6.3.11
-      '@astrojs/mdx': 4.3.14(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+      '@astrojs/markdown-remark': 7.0.0
+      '@astrojs/mdx': 5.0.0(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
       '@astrojs/sitemap': 3.7.1
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
@@ -5233,12 +5266,6 @@ snapshots:
       js-tokens: 4.0.0
       picocolors: 1.1.1
 
-  '@babel/code-frame@7.27.1':
-    dependencies:
-      '@babel/helper-validator-identifier': 7.28.5
-      js-tokens: 4.0.0
-      picocolors: 1.1.1
-
   '@babel/code-frame@7.29.0':
     dependencies:
       '@babel/helper-validator-identifier': 7.28.5
@@ -5255,10 +5282,10 @@ snapshots:
       '@babel/helper-compilation-targets': 7.25.9
       '@babel/helper-module-transforms': 7.26.0(@babel/core@7.26.0)
       '@babel/helpers': 7.26.0
-      '@babel/parser': 7.28.5
+      '@babel/parser': 7.29.0
       '@babel/template': 7.25.9
       '@babel/traverse': 7.26.4
-      '@babel/types': 7.28.5
+      '@babel/types': 7.29.0
       convert-source-map: 2.0.0
       debug: 4.4.3
       gensync: 1.0.0-beta.2
@@ -5269,8 +5296,8 @@ snapshots:
 
   '@babel/generator@7.26.3':
     dependencies:
-      '@babel/parser': 7.28.5
-      '@babel/types': 7.28.5
+      '@babel/parser': 7.29.0
+      '@babel/types': 7.29.0
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
       jsesc: 3.1.0
@@ -5322,10 +5349,6 @@ snapshots:
   '@babel/helpers@7.26.0':
     dependencies:
       '@babel/template': 7.25.9
-      '@babel/types': 7.29.0
-
-  '@babel/parser@7.28.5':
-    dependencies:
       '@babel/types': 7.29.0
 
   '@babel/parser@7.29.0':
@@ -5456,11 +5479,6 @@ snapshots:
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
-
-  '@babel/types@7.28.5':
-    dependencies:
-      '@babel/helper-string-parser': 7.27.1
-      '@babel/helper-validator-identifier': 7.28.5
 
   '@babel/types@7.29.0':
     dependencies:
@@ -5843,13 +5861,11 @@ snapshots:
 
   '@fastify/busboy@3.2.0': {}
 
-  '@hideoo/starlight-plugins-docs-components@0.4.0(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
+  '@hideoo/starlight-plugins-docs-components@0.4.2(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))':
     dependencies:
-      '@astrojs/starlight': 0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-      starlight-package-managers: 0.8.1(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))
-      starlight-showcases: 0.3.0(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-    transitivePeerDependencies:
-      - astro
+      '@astrojs/starlight': 0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+      starlight-package-managers: 0.12.0(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))
+      starlight-showcases: 0.3.2(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))
 
   '@humanwhocodes/momoa@2.0.4': {}
 
@@ -6153,21 +6169,19 @@ snapshots:
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:
       '@jridgewell/set-array': 1.2.1
-      '@jridgewell/sourcemap-codec': 1.5.0
+      '@jridgewell/sourcemap-codec': 1.5.5
       '@jridgewell/trace-mapping': 0.3.25
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
   '@jridgewell/set-array@1.2.1': {}
 
-  '@jridgewell/sourcemap-codec@1.5.0': {}
-
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
   '@jridgewell/trace-mapping@0.3.25':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.5.0
+      '@jridgewell/sourcemap-codec': 1.5.5
 
   '@jridgewell/trace-mapping@0.3.31':
     dependencies:
@@ -6802,9 +6816,23 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-to-html: 9.0.5
 
+  '@shikijs/core@4.0.2':
+    dependencies:
+      '@shikijs/primitive': 4.0.2
+      '@shikijs/types': 4.0.2
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
+      hast-util-to-html: 9.0.5
+
   '@shikijs/engine-javascript@3.23.0':
     dependencies:
       '@shikijs/types': 3.23.0
+      '@shikijs/vscode-textmate': 10.0.2
+      oniguruma-to-es: 4.3.4
+
+  '@shikijs/engine-javascript@4.0.2':
+    dependencies:
+      '@shikijs/types': 4.0.2
       '@shikijs/vscode-textmate': 10.0.2
       oniguruma-to-es: 4.3.4
 
@@ -6813,15 +6841,39 @@ snapshots:
       '@shikijs/types': 3.23.0
       '@shikijs/vscode-textmate': 10.0.2
 
+  '@shikijs/engine-oniguruma@4.0.2':
+    dependencies:
+      '@shikijs/types': 4.0.2
+      '@shikijs/vscode-textmate': 10.0.2
+
   '@shikijs/langs@3.23.0':
     dependencies:
       '@shikijs/types': 3.23.0
+
+  '@shikijs/langs@4.0.2':
+    dependencies:
+      '@shikijs/types': 4.0.2
+
+  '@shikijs/primitive@4.0.2':
+    dependencies:
+      '@shikijs/types': 4.0.2
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
 
   '@shikijs/themes@3.23.0':
     dependencies:
       '@shikijs/types': 3.23.0
 
+  '@shikijs/themes@4.0.2':
+    dependencies:
+      '@shikijs/types': 4.0.2
+
   '@shikijs/types@3.23.0':
+    dependencies:
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
+
+  '@shikijs/types@4.0.2':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
@@ -6858,14 +6910,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@trueberryless-org/starlight-plugins-docs-components@0.4.3(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
+  '@trueberryless-org/starlight-plugins-docs-components@0.5.0(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))':
     dependencies:
-      '@astrojs/starlight': 0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-      '@hideoo/starlight-plugins-docs-components': 0.4.0(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+      '@astrojs/starlight': 0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+      '@hideoo/starlight-plugins-docs-components': 0.4.2(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))
       change-case: 5.4.4
-      starlight-showcases: 0.2.0(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-    transitivePeerDependencies:
-      - astro
+      starlight-showcases: 0.3.2(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -6951,7 +7001,7 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@types/picomatch@3.0.2': {}
+  '@types/picomatch@4.0.2': {}
 
   '@types/retry@0.12.2': {}
 
@@ -7515,7 +7565,7 @@ snapshots:
 
   better-ajv-errors@1.2.0(ajv@8.17.1):
     dependencies:
-      '@babel/code-frame': 7.27.1
+      '@babel/code-frame': 7.29.0
       '@humanwhocodes/momoa': 2.0.4
       ajv: 8.17.1
       chalk: 4.1.2
@@ -7799,8 +7849,6 @@ snapshots:
     dependencies:
       css-tree: 2.2.1
 
-  cssom@0.5.0: {}
-
   data-uri-to-buffer@4.0.1: {}
 
   dataloader@1.4.0: {}
@@ -7812,10 +7860,6 @@ snapshots:
   decache@4.6.2:
     dependencies:
       callsite: 1.0.0
-
-  decode-named-character-reference@1.2.0:
-    dependencies:
-      character-entities: 2.0.2
 
   decode-named-character-reference@1.3.0:
     dependencies:
@@ -7989,6 +8033,8 @@ snapshots:
       is-arrayish: 0.2.1
 
   es-module-lexer@1.7.0: {}
+
+  es-module-lexer@2.0.0: {}
 
   esast-util-from-estree@2.0.0:
     dependencies:
@@ -8594,13 +8640,6 @@ snapshots:
 
   html-whitespace-sensitive-tag-names@3.0.1: {}
 
-  htmlparser2@8.0.2:
-    dependencies:
-      domelementtype: 2.3.0
-      domhandler: 5.0.3
-      domutils: 3.2.2
-      entities: 4.5.0
-
   http-cache-semantics@4.2.0: {}
 
   http-shutdown@1.2.2: {}
@@ -8704,7 +8743,7 @@ snapshots:
 
   iron-webcrypto@1.2.1: {}
 
-  is-absolute-url@4.0.1: {}
+  is-absolute-url@5.0.0: {}
 
   is-alphabetical@2.0.1: {}
 
@@ -8796,7 +8835,7 @@ snapshots:
   istanbul-lib-instrument@6.0.3:
     dependencies:
       '@babel/core': 7.26.0
-      '@babel/parser': 7.28.5
+      '@babel/parser': 7.29.0
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
       semver: 7.7.4
@@ -9071,7 +9110,7 @@ snapshots:
       '@babel/generator': 7.26.3
       '@babel/plugin-syntax-jsx': 7.25.9(@babel/core@7.26.0)
       '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.26.0)
-      '@babel/types': 7.28.5
+      '@babel/types': 7.29.0
       '@jest/expect-utils': 29.7.0
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
@@ -9086,7 +9125,7 @@ snapshots:
       jest-util: 29.7.0
       natural-compare: 1.4.0
       pretty-format: 29.7.0
-      semver: 7.7.3
+      semver: 7.7.4
     transitivePeerDependencies:
       - supports-color
 
@@ -9227,14 +9266,6 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  linkedom@0.14.26:
-    dependencies:
-      css-select: 5.2.2
-      cssom: 0.5.0
-      html-escaper: 3.0.3
-      htmlparser2: 8.0.2
-      uhyphen: 0.2.0
-
   listhen@1.9.0:
     dependencies:
       '@parcel/watcher': 2.5.1
@@ -9256,7 +9287,7 @@ snapshots:
       untun: 0.1.3
       uqr: 0.1.2
 
-  lite-youtube-embed@0.3.3: {}
+  lite-youtube-embed@0.3.4: {}
 
   locate-path@5.0.0:
     dependencies:
@@ -10057,7 +10088,7 @@ snapshots:
       '@types/unist': 2.0.11
       character-entities-legacy: 3.0.0
       character-reference-invalid: 2.0.1
-      decode-named-character-reference: 1.2.0
+      decode-named-character-reference: 1.3.0
       is-alphanumerical: 2.0.1
       is-decimal: 2.0.1
       is-hexadecimal: 2.0.1
@@ -10082,7 +10113,7 @@ snapshots:
 
   parse-json@8.3.0:
     dependencies:
-      '@babel/code-frame': 7.27.1
+      '@babel/code-frame': 7.29.0
       index-to-position: 1.1.0
       type-fest: 4.41.0
 
@@ -10607,6 +10638,17 @@ snapshots:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
 
+  shiki@4.0.2:
+    dependencies:
+      '@shikijs/core': 4.0.2
+      '@shikijs/engine-javascript': 4.0.2
+      '@shikijs/engine-oniguruma': 4.0.2
+      '@shikijs/langs': 4.0.2
+      '@shikijs/themes': 4.0.2
+      '@shikijs/types': 4.0.2
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
+
   signal-exit@3.0.7: {}
 
   signal-exit@4.1.0: {}
@@ -10675,23 +10717,23 @@ snapshots:
     dependencies:
       escape-string-regexp: 2.0.0
 
-  starlight-contributor-list@0.3.2(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))):
+  starlight-contributor-list@0.3.2(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))):
     dependencies:
       '@11ty/eleventy-fetch': 4.0.1
-      '@astrojs/starlight': 0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+      '@astrojs/starlight': 0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  starlight-links-validator@0.19.2(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)):
+  starlight-links-validator@0.20.1(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)):
     dependencies:
-      '@astrojs/starlight': 0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-      '@types/picomatch': 3.0.2
+      '@astrojs/starlight': 0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+      '@types/picomatch': 4.0.2
       astro: 5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
       github-slugger: 2.0.0
       hast-util-from-html: 2.0.3
       hast-util-has-property: 3.0.0
-      is-absolute-url: 4.0.1
+      is-absolute-url: 5.0.0
       kleur: 4.1.5
       mdast-util-mdx-jsx: 3.2.0
       mdast-util-to-string: 4.0.0
@@ -10701,25 +10743,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  starlight-package-managers@0.8.1(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))):
+  starlight-package-managers@0.12.0(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))):
     dependencies:
-      '@astrojs/starlight': 0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+      '@astrojs/starlight': 0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
 
-  starlight-showcases@0.2.0(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)):
+  starlight-showcases@0.3.2(@astrojs/starlight@0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))):
     dependencies:
-      '@astro-community/astro-embed-twitter': 0.5.8(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-      '@astro-community/astro-embed-youtube': 0.5.6(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-      '@astrojs/starlight': 0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-    transitivePeerDependencies:
-      - astro
-
-  starlight-showcases@0.3.0(@astrojs/starlight@0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)))(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)):
-    dependencies:
-      '@astro-community/astro-embed-twitter': 0.5.8(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-      '@astro-community/astro-embed-youtube': 0.5.6(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-      '@astrojs/starlight': 0.37.7(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
-    transitivePeerDependencies:
-      - astro
+      '@astro-community/astro-embed-twitter': 0.5.11
+      '@astro-community/astro-embed-youtube': 0.5.10
+      '@astrojs/starlight': 0.38.1(astro@5.18.1(@netlify/blobs@10.7.1)(@types/node@25.0.1)(jiti@2.5.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
 
   std-env@3.9.0: {}
 
@@ -10935,8 +10967,6 @@ snapshots:
 
   uglify-js@3.19.3:
     optional: true
-
-  uhyphen@0.2.0: {}
 
   ulid@3.0.1: {}
 
