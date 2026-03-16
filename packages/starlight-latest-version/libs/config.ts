@@ -13,7 +13,7 @@ const configSchema = z.object({
         .default("default"),
       size: z.enum(["small", "medium", "large"]).default("medium"),
     })
-    .default({}),
+    .prefault({}),
   showInSiteTitle: z.enum(["false", "true", "deferred"]).default("false"),
   regexPattern: z.string().optional(),
 });
@@ -27,8 +27,8 @@ export function validateConfig(
     const errors = config.error.flatten();
 
     throw new AstroError(
-      `Invalid @trueberryless-org/starlight-latest-version configuration:
-      
+      `Invalid starlight-latest-version configuration:
+
       ${errors.formErrors.map((formError) => ` - ${formError}`).join("\n")}
       ${Object.entries(errors.fieldErrors)
         .map(
