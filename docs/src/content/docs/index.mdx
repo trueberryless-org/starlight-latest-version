@@ -4,13 +4,20 @@ description: Show the latest released version of your package in your Starlight 
 head:
   - tag: title
     content: Starlight Latest Version
+  - tag: style
+    content: |
+      .hero-html {
+        --size: 12rem;
+        font-size: var(--size);
+        justify-content: center;
+        line-height: var(--size);
+      }
 template: splash
 editUrl: false
 hero:
   tagline: Show the latest released version of your package in your Starlight documentation.
   image:
-    dark: ../../assets/big-logo-dark.png
-    light: ../../assets/big-logo-light.png
+    html: '🪂'
   actions:
     - text: Get Started
       link: /getting-started/
