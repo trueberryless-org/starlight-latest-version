@@ -1,5 +1,15 @@
 # starlight-latest-version
 
+## 0.7.0
+
+### Minor Changes
+
+- [#68](https://github.com/trueberryless-org/starlight-latest-version/pull/68) [`d88a13f`](https://github.com/trueberryless-org/starlight-latest-version/commit/d88a13ff2225b8889421d87485f0b41598b729bb) Thanks [@trueberryless](https://github.com/trueberryless)! - Adds support for Astro v6, drops support for Astro v5.
+
+  ⚠️ **BREAKING CHANGE:** The minimum supported version of Starlight is now `0.38.0`.
+
+  Please follow the [upgrade guide](https://github.com/withastro/starlight/releases/tag/%40astrojs%2Fstarlight%400.38.0) to update your project.
+
 ## 0.6.1
 
 ### Patch Changes
