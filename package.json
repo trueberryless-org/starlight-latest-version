@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Show the latest released version of your package in your Starlight documentation.",
-  "homepage": "https://starlight-latest-version.trueberryless.org/",
+  "homepage": "https://github.com/trueberryless-org/starlight-latest-version",
   "bugs": {
     "url": "https://github.com/trueberryless-org/starlight-latest-version/issues"
   },

@@ -8,15 +8,17 @@
     "astro",
     "version"
   ],
-  "homepage": "https://github.com/trueberryless-org/starlight-latest-version",
-  "bugs": "https://github.com/trueberryless-org/starlight-latest-version/issues",
+  "homepage": "https://starlight-latest-version.trueberryless.org",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/trueberryless-org/starlight-latest-version.git",
     "directory": "docs"
   },
   "license": "MIT",
-  "author": "trueberryless-org",
+  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
   "type": "module",
   "scripts": {
     "astro": "astro",
