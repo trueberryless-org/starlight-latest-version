@@ -34,7 +34,7 @@ The Starlight Latest Version plugin accepts the following configuration options:
 
 ### `source`
 
-**Type:** `{ type: "npm" | "github" | "gitlab", slug: string }`
+**Type:** `{ type: "npm" | "github" | "gitlab", slug: string }`<br/>
 **Required**
 
 Provide the source where your package is released.
@@ -48,7 +48,7 @@ Please note that the `repo` configuration has been <span style="color: var(--sl-
 
 #### `type`
 
-**Type:** `"npm" | "github" | "gitlab"`
+**Type:** `"npm" | "github" | "gitlab"`<br/>
 **Default:** `"npm"`
 
 The type of the source where your package is released.
@@ -56,7 +56,7 @@ You can choose between `"npm"`, `"github"` or `"gitlab"`. This allows you to bet
 
 #### `slug`
 
-**Type:** `string`
+**Type:** `string`<br/>
 **Required**
 
 The slug of the source where your package is released.
@@ -122,14 +122,14 @@ Depending on the [source `type`](#type), the slug must follow the syntax:
 
 ### `badge`
 
-**Type:** `object`
+**Type:** `object`<br/>
 **Default:** `{ variant: "default", size: "medium" }`
 
 Customize the badge used to display the latest version of your Starlight plugin.
 
 #### `variant`
 
-**Type:** `"default" | "note" | "danger" | "success" | "caution" | "tip"`
+**Type:** `"default" | "note" | "danger" | "success" | "caution" | "tip"`<br/>
 **Default:** `"default"`
 
 The variant of the badge to use.
@@ -145,7 +145,7 @@ Here you can see how the different variants look like:
 
 #### `size`
 
-**Type:** `"small" | "medium" | "large"`
+**Type:** `"small" | "medium" | "large"`<br/>
 **Default:** `"medium"`
 
 The size of the badge to use.
@@ -158,7 +158,7 @@ Here you can see how the different sizes look like:
 
 ### `showInSiteTitle`
 
-**Type:** `"false" | "true" | "deferred"`
+**Type:** `"false" | "true" | "deferred"`<br/>
 **Default:** `"false"`
 
 Whether to show the latest version of your Starlight plugin in the site title. By default, the plugin does not show the latest version in the site title.

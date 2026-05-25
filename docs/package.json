@@ -28,10 +28,10 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/netlify": "^7.0.3",
-    "@astrojs/starlight": "^0.38.1",
+    "@astrojs/netlify": "^7.0.10",
+    "@astrojs/starlight": "^0.39.2",
     "@trueberryless-org/starlight-plugins-docs-components": "^0.5.0",
-    "astro": "^6.0.5",
+    "astro": "^6.3.7",
     "sharp": "^0.34.5",
     "starlight-contributor-list": "^0.4.0",
     "starlight-latest-version": "workspace:*",
