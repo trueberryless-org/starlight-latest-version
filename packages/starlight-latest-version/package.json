@@ -45,7 +45,7 @@
     "astro": "^6.0.4"
   },
   "engines": {
-    "node": ">=22.22.2"
+    "node": ">=22.22.3"
   },
   "publishConfig": {
     "access": "public"
