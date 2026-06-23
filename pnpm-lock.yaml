@@ -27,7 +27,7 @@ importers:
   docs:
     dependencies:
       '@astrojs/netlify':
-        specifier: ^7.0.11
+        specifier: ^7.0.12
         version: 7.0.13(@types/node@25.9.3)(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0))(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0)
       '@astrojs/starlight':
         specifier: ^0.39.3
@@ -36,7 +36,7 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0(@astrojs/starlight@0.39.3(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0))(typescript@5.9.3))
       astro:
-        specifier: ^6.4.2
+        specifier: ^6.4.3
         version: 6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0)
       sharp:
         specifier: ^0.34.5
@@ -63,7 +63,7 @@ importers:
         specifier: ^29.5.14
         version: 29.5.14
       astro:
-        specifier: ^6.4.2
+        specifier: ^6.4.3
         version: 6.4.7(@netlify/blobs@10.7.9)(@types/node@22.10.2)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0)
       jest:
         specifier: ^29.7.0
