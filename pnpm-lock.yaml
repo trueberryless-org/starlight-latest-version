@@ -48,8 +48,8 @@ importers:
         specifier: workspace:*
         version: link:../packages/starlight-latest-version
       starlight-links-validator:
-        specifier: ^0.24.0
-        version: 0.24.0(@astrojs/starlight@0.40.0(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0))(typescript@5.9.3))(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0))
+        specifier: ^0.24.1
+        version: 0.24.1(@astrojs/starlight@0.40.0(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0))(typescript@5.9.3))(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0))
 
   packages/starlight-latest-version:
     devDependencies:
@@ -4936,8 +4936,8 @@ packages:
     peerDependencies:
       astro: ^5.0.0
 
-  starlight-links-validator@0.24.0:
-    resolution: {integrity: sha512-bsZf77oRJmY92KWOcu3vYK8Y12KJNvO3jQca1BgOBs+XskNfjPXrkgVtT7ls/FnLoomfsIV0wLdJfJs7kzGojA==}
+  starlight-links-validator@0.24.1:
+    resolution: {integrity: sha512-nATZ0xMLYnmO1YDBGEy9PdjF/WxhbKR7/gQo0dFs5UELcorKLPXcNLM62xbqII7g0AF7/D9wSzD4qSwIGTu8sw==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
       '@astrojs/starlight': '>=0.38.0'
@@ -11886,7 +11886,7 @@ snapshots:
     dependencies:
       astro: 6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0)
 
-  starlight-links-validator@0.24.0(@astrojs/starlight@0.40.0(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0))(typescript@5.9.3))(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0)):
+  starlight-links-validator@0.24.1(@astrojs/starlight@0.40.0(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0))(typescript@5.9.3))(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0)):
     dependencies:
       '@astrojs/starlight': 0.40.0(astro@6.4.7(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0))(typescript@5.9.3)
       '@types/picomatch': 4.0.2
