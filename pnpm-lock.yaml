@@ -39,7 +39,7 @@ importers:
         specifier: ^6.4.8
         version: 6.4.8(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(rollup@4.62.0)(yaml@2.9.0)
       sharp:
-        specifier: ^0.35.1
+        specifier: ^0.35.2
         version: 0.35.2
       starlight-contributor-list:
         specifier: ^0.4.0
