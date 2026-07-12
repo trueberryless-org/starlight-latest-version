@@ -1,4 +1,5 @@
 import type { ViteUserConfig } from "astro";
+import { fileURLToPath } from "node:url";
 
 import type { starlightLatestVersionConfig } from "..";
 
@@ -6,10 +7,23 @@ export function vitePluginstarlightLatestVersionConfig(
   config: starlightLatestVersionConfig
   // context: starlightLatestVersionContext
 ): VitePlugin {
+  const fetchVersionPath = fileURLToPath(
+    new URL("./utils.ts", import.meta.url)
+  ).replace(/\\/g, "/");
+
   const modules = {
     "virtual:starlight-latest-version-config": `export default ${JSON.stringify(
       config
     )}`,
+    "virtual:starlight-latest-version": `
+import fetchVersion from ${JSON.stringify(fetchVersionPath)};
+
+const config = ${JSON.stringify(config)};
+
+export function getLatestVersion() {
+  return fetchVersion(config);
+}
+`,
   } satisfies Record<string, string>;
 
   const moduleResolutionMap = Object.fromEntries(

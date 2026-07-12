@@ -36,6 +36,7 @@ export default defineConfig({
             { slug: "getting-started" },
             { slug: "configuration" },
             { slug: "components" },
+            { slug: "programmatic-usage" },
             { slug: "version-extraction-algorithm" },
           ],
         },
