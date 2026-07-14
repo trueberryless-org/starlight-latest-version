@@ -6,9 +6,14 @@ import {
   validateConfig,
 } from "./libs/config";
 import { overrideStarlightComponent } from "./libs/starlight";
+import type { starlightLatestVersionContext } from "./libs/types";
 import { vitePluginstarlightLatestVersionConfig } from "./libs/vite";
 
-export type { starlightLatestVersionConfig, starlightLatestVersionUserConfig };
+export type {
+  starlightLatestVersionConfig,
+  starlightLatestVersionContext,
+  starlightLatestVersionUserConfig,
+};
 
 export default function starlightLatestVersion(
   userConfig?: starlightLatestVersionUserConfig
@@ -46,6 +51,12 @@ export default function starlightLatestVersion(
                 vite: {
                   plugins: [vitePluginstarlightLatestVersionConfig(config)],
                 },
+              });
+            },
+            "astro:config:done": ({ injectTypes }) => {
+              injectTypes({
+                filename: "types.d.ts",
+                content: `/// <reference types="starlight-latest-version/virtual.d.ts" />`,
               });
             },
           },

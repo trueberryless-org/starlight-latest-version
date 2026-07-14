@@ -14,33 +14,35 @@ import Version from "starlight-latest-version/components/Version.astro";
 
 The `Version` component is used to display the latest version in a raw format. It doesn't apply any styling, just the version string in a `span` element.
 
+<Preview>
+
 ```mdx
 import Version from "starlight-latest-version/components/Version.astro";
 
 <Version />
 ```
 
-<Preview>
-
-<Version />
+<Version slot="preview" />
 
 </Preview>
 
 You can opt-in to use the [`server:defer`](https://docs.astro.build/en/reference/directives-reference/#serverdefer) directive to delay rendering until the content of the component is available if a [server adapter](https://docs.astro.build/en/guides/on-demand-rendering/#server-adapters) is configured. This is the recommended approach if your docs do not get rebuilt every time a new version is released.
 
+<Preview>
+
 ```mdx
 import Version from "starlight-latest-version/components/Version.astro";
 
 <Version server:defer />
 ```
 
-<Preview>
-
-<Version server:defer />
+<Version slot="preview" server:defer />
 
 </Preview>
 
 While the content is loading you can ["slot in"](https://docs.astro.build/en/guides/server-islands/#server-island-fallback-content) fallback content:
+
+<Preview>
 
 ```mdx
 import Version from "starlight-latest-version/components/Version.astro";
@@ -50,9 +52,7 @@ import Version from "starlight-latest-version/components/Version.astro";
 </Version>
 ```
 
-<Preview>
-
-<Version server:defer>
+<Version slot="preview" server:defer>
   <span slot="fallback">Loading...</span>
 </Version>
 
@@ -64,33 +64,35 @@ import VersionBadge from "starlight-latest-version/components/VersionBadge.astro
 
 The `VersionBadge` component is used to display the latest version in a badge format. This component is also used in the site title if you enable [`showInSiteTitle`](/configuration#showinsitetitle).
 
+<Preview>
+
 ```mdx
 import VersionBadge from "starlight-latest-version/components/VersionBadge.astro";
 
 <VersionBadge />
 ```
 
-<Preview>
-
-<VersionBadge />
+<VersionBadge slot="preview" />
 
 </Preview>
 
 You can opt-in to use the [`server:defer`](https://docs.astro.build/en/reference/directives-reference/#serverdefer) directive to delay rendering until the content of the component is available if a [server adapter](https://docs.astro.build/en/guides/on-demand-rendering/#server-adapters) is configured. This is the recommended approach if your docs do not get rebuilt every time a new version is released.
 
+<Preview>
+
 ```mdx
 import VersionBadge from "starlight-latest-version/components/VersionBadge.astro";
 
 <VersionBadge server:defer />
 ```
 
-<Preview>
-
-<VersionBadge server:defer />
+<VersionBadge slot="preview" server:defer />
 
 </Preview>
 
 While the content is loading you can ["slot in"](https://docs.astro.build/en/guides/server-islands/#server-island-fallback-content) fallback content:
+
+<Preview>
 
 ```mdx
 import VersionBadge from "starlight-latest-version/components/VersionBadge.astro";
@@ -100,9 +102,7 @@ import VersionBadge from "starlight-latest-version/components/VersionBadge.astro
 </VersionBadge>
 ```
 
-<Preview>
-
-<VersionBadge server:defer>
+<VersionBadge slot="preview" server:defer>
   <Badge text={"Loading..."} variant="default" size="medium" slot="fallback" />
 </VersionBadge>
 

@@ -1,0 +1,67 @@
+---
+title: Programmatic Usage
+description: Access the latest version programmatically through the virtual module.
+---
+
+import Preview from "../../components/component-preview.astro";
+import Example from "../../components/programmatic-example.astro";
+
+Besides the [components](/components), the Starlight Latest Version plugin exposes the latest version programmatically through a [Vite virtual module](https://vite.dev/guide/api-plugin.html#virtual-modules-convention). This is useful when you need the raw version string, e.g. to inject it into a code block or to build a download URL.
+
+## `getLatestVersion`
+
+The `virtual:starlight-latest-version` module exports an asynchronous `getLatestVersion` function which fetches the latest version using the [source](/configuration#source) you configured for the plugin.
+
+```astro
+---
+import { getLatestVersion } from "virtual:starlight-latest-version";
+
+const version = await getLatestVersion();
+---
+
+{version.versionAvailable && <p>The latest version is {version.version}.</p>}
+```
+
+The returned object is the same context used internally by the plugin's components. When a version is available (`versionAvailable` is `true`), it contains the following properties:
+
+```typescript
+interface VersionContext {
+  versionAvailable: boolean; // Whether a version could be fetched.
+  version: string; // The full version, e.g. v1.2.3 or v1.2.3-beta.1.
+  versionWithoutPrefix: string; // The version without the leading v, e.g. 1.2.3.
+  versionMajor: number; // The major version number.
+  versionMinor: number; // The minor version number.
+  versionPatch: number; // The patch version number.
+  prerelease?: string; // The prerelease identifier, e.g. beta.1, if any.
+  isPrereleaseVersion: boolean; // Whether the version is a prerelease.
+  isStableVersion: boolean; // Whether the version is a stable release.
+  prefix?: string; // The prefix in front of the version, e.g. starlight-@, if any.
+  hasVPrefix: boolean; // Whether the original tag had a v prefix.
+}
+```
+
+## Example: inject the version into a code block
+
+Because [code blocks in MDX are static](https://github.com/trueberryless-org/starlight-latest-version/issues/85), you cannot render a component inside them. Instead, read a file with the [`?raw`](https://vite.dev/guide/assets.html#importing-asset-as-string) suffix, replace a placeholder with the fetched version, and pass the result to the [`<Code>`](https://starlight.astro.build/components/code/) component:
+
+
+<Preview>
+
+```astro
+---
+import { Code } from "@astrojs/starlight/components";
+import { getLatestVersion } from "virtual:starlight-latest-version";
+import readme from "./README.md?raw";
+
+const version = await getLatestVersion();
+const code = version.versionAvailable
+  ? readme.replaceAll("<VERSION>", version.versionWithoutPrefix)
+  : readme;
+---
+
+<Code code={code} lang="md" title="README.md" />
+```
+
+<Example slot="preview" />
+
+</Preview>

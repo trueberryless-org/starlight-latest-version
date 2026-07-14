@@ -5,9 +5,14 @@ description: Get a live demonstration of the Starlight Latest Version plugin.
 
 import { Badge } from '@astrojs/starlight/components';
 import VersionBadge from "starlight-latest-version/components/VersionBadge.astro";
+import { getLatestVersion } from "virtual:starlight-latest-version";
+
+export const version = await getLatestVersion();
 
 See the blue version tag badge in the top right corner of this page as an example. It should look like this:
 
 <VersionBadge server:defer>
   <Badge text={"      "} variant="default" size="medium" slot="fallback" />
 </VersionBadge>
+
+The version fetched [programmatically](/programmatic-usage) is: <code>{version.versionAvailable ? version.version : "N/A"}</code>
