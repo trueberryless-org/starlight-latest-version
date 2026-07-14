@@ -1,0 +1,12 @@
+---
+import { Code } from "@astrojs/starlight/components";
+import { getLatestVersion } from "virtual:starlight-latest-version";
+import readme from "./src/components/README.md?raw";
+
+const version = await getLatestVersion();
+const code = version.versionAvailable
+  ? readme.replaceAll("<VERSION>", version.versionWithoutPrefix)
+  : readme;
+---
+
+<Code code={code} lang="md" title="README.md" />
