@@ -27,7 +27,8 @@
     "./components/Version.astro": "./components/Version.astro",
     "./components/VersionBadge.astro": "./components/VersionBadge.astro",
     "./overrides/SiteTitle.astro": "./overrides/SiteTitle.astro",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./virtual.d.ts": "./virtual.d.ts"
   },
   "scripts": {
     "test": "jest"

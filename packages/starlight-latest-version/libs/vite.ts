@@ -5,7 +5,6 @@ import type { starlightLatestVersionConfig } from "..";
 
 export function vitePluginstarlightLatestVersionConfig(
   config: starlightLatestVersionConfig
-  // context: starlightLatestVersionContext
 ): VitePlugin {
   const fetchVersionPath = fileURLToPath(
     new URL("./utils.ts", import.meta.url)

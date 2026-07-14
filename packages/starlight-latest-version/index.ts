@@ -56,11 +56,7 @@ export default function starlightLatestVersion(
             "astro:config:done": ({ injectTypes }) => {
               injectTypes({
                 filename: "types.d.ts",
-                content: `declare module "virtual:starlight-latest-version" {
-  export function getLatestVersion(): Promise<
-    import("starlight-latest-version").starlightLatestVersionContext
-  >;
-}`,
+                content: `/// <reference types="starlight-latest-version/virtual.d.ts" />`,
               });
             },
           },
