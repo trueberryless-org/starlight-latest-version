@@ -1,5 +1,11 @@
 # starlight-latest-version
 
+## 0.8.0
+
+### Minor Changes
+
+- [#108](https://github.com/trueberryless-org/starlight-latest-version/pull/108) [`d5245a3`](https://github.com/trueberryless-org/starlight-latest-version/commit/d5245a3ee94a17787f7863673f87b687cabd8799) Thanks [@DanielHabenicht](https://github.com/DanielHabenicht)! - Add a `virtual:starlight-latest-version` module exposing an asynchronous `getLatestVersion` function to access the latest version programmatically.
+
 ## 0.7.0
 
 ### Minor Changes
