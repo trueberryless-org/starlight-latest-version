@@ -10,12 +10,16 @@ export function vitePluginstarlightLatestVersionConfig(
     new URL("./utils.ts", import.meta.url)
   ).replace(/\\/g, "/");
 
+  const fetchVersionImportId = fetchVersionPath.startsWith("/")
+    ? `/@fs${fetchVersionPath}`
+    : `/@fs/${fetchVersionPath}`;
+
   const modules = {
     "virtual:starlight-latest-version-config": `export default ${JSON.stringify(
       config
     )}`,
     "virtual:starlight-latest-version": `
-import fetchVersion from ${JSON.stringify(fetchVersionPath)};
+import fetchVersion from ${JSON.stringify(fetchVersionImportId)};
 
 const config = ${JSON.stringify(config)};
 
