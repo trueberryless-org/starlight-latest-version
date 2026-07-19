@@ -8,7 +8,7 @@
     "astro",
     "version"
   ],
-  "homepage": "https://starlight-latest-version.trueberryless.org",
+  "homepage": "https://starlight-latest-version.netlify.app/",
   "bugs": {
     "url": "https://github.com/trueberryless-org/starlight-latest-version/issues"
   },
@@ -18,7 +18,7 @@
     "directory": "docs"
   },
   "license": "MIT",
-  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "type": "module",
   "scripts": {
     "astro": "astro",
