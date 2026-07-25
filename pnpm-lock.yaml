@@ -30,11 +30,11 @@ importers:
         specifier: ^8.1.1
         version: 8.1.2(@types/node@25.9.3)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(jiti@2.7.0)(yaml@2.9.0)
       '@astrojs/starlight':
-        specifier: ^0.41.2
-        version: 0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
+        specifier: ^0.41.3
+        version: 0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
       '@trueberryless-org/starlight-plugins-docs-components':
         specifier: ^0.6.0
-        version: 0.6.0(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
+        version: 0.6.0(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
       astro:
         specifier: ^7.0.6
         version: 7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)
@@ -49,13 +49,13 @@ importers:
         version: link:../packages/starlight-latest-version
       starlight-links-validator:
         specifier: ^0.25.2
-        version: 0.25.2(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))
+        version: 0.25.2(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))
 
   packages/starlight-latest-version:
     devDependencies:
       '@astrojs/starlight':
-        specifier: 0.41.2
-        version: 0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
+        specifier: 0.41.3
+        version: 0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
       '@jest/globals':
         specifier: ^30.4.1
         version: 30.4.1
@@ -186,8 +186,8 @@ packages:
   '@astrojs/sitemap@3.7.2':
     resolution: {integrity: sha512-PqkzkcZTb5ICiyIR8VoKbIAP/laNRXi5tw616N1Ckk+40oNB8Can1AzVV56lrbC5GKSZFCyJYUVYqVivMisvpA==}
 
-  '@astrojs/starlight@0.41.2':
-    resolution: {integrity: sha512-1h9AhFW5uWgqEoTqOVLMnXvawa0TaqLSr14UyTbnArQL6W0TolTfMWpG5hrvbw+NO6wwdSOFz5iwhVtkGUBtsw==}
+  '@astrojs/starlight@0.41.3':
+    resolution: {integrity: sha512-8xsG6UpK581TJmtOc7/pnxHKEbP16rV06VLWaVa7FOyE/VEwnaHOsLtL+miifCEfuiuv0Wn+j8u3JSluRQesMQ==}
     peerDependencies:
       '@astrojs/markdown-remark': ^7.2.0
       astro: ^7.0.2
@@ -6370,7 +6370,7 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.4.3
 
-  '@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)':
+  '@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)':
     dependencies:
       '@astrojs/markdown-satteri': 0.3.4
       '@astrojs/mdx': 7.0.3(@astrojs/markdown-satteri@0.3.4)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))
@@ -7161,11 +7161,11 @@ snapshots:
 
   '@fastify/busboy@3.2.0': {}
 
-  '@hideoo/starlight-plugins-docs-components@0.4.2(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))':
+  '@hideoo/starlight-plugins-docs-components@0.4.2(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))':
     dependencies:
-      '@astrojs/starlight': 0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
-      starlight-package-managers: 0.12.0(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
-      starlight-showcases: 0.3.2(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
+      '@astrojs/starlight': 0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
+      starlight-package-managers: 0.12.0(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
+      starlight-showcases: 0.3.2(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
 
   '@humanwhocodes/momoa@2.0.4': {}
 
@@ -8416,12 +8416,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@trueberryless-org/starlight-plugins-docs-components@0.6.0(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))':
+  '@trueberryless-org/starlight-plugins-docs-components@0.6.0(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))':
     dependencies:
-      '@astrojs/starlight': 0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
-      '@hideoo/starlight-plugins-docs-components': 0.4.2(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
+      '@astrojs/starlight': 0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
+      '@hideoo/starlight-plugins-docs-components': 0.4.2(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
       change-case: 5.4.4
-      starlight-showcases: 0.3.2(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
+      starlight-showcases: 0.3.2(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
 
   '@tybys/wasm-util@0.10.3':
     dependencies:
@@ -12782,10 +12782,10 @@ snapshots:
     dependencies:
       astro: 7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)
 
-  starlight-links-validator@0.25.2(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)):
+  starlight-links-validator@0.25.2(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)):
     dependencies:
       '@astrojs/markdown-satteri': 0.3.4
-      '@astrojs/starlight': 0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
+      '@astrojs/starlight': 0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
       '@types/picomatch': 4.0.2
       astro: 7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)
       github-slugger: 2.0.0
@@ -12801,15 +12801,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  starlight-package-managers@0.12.0(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)):
+  starlight-package-managers@0.12.0(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)):
     dependencies:
-      '@astrojs/starlight': 0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
+      '@astrojs/starlight': 0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
 
-  starlight-showcases@0.3.2(@astrojs/starlight@0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)):
+  starlight-showcases@0.3.2(@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)):
     dependencies:
       '@astro-community/astro-embed-twitter': 0.5.11
       '@astro-community/astro-embed-youtube': 0.5.10
-      '@astrojs/starlight': 0.41.2(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
+      '@astrojs/starlight': 0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.0(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3)
 
   std-env@4.1.0: {}
 
