@@ -34,10 +34,10 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@astrojs/starlight": "0.41.7",
+    "@astrojs/starlight": "0.41.8",
     "@jest/globals": "^30.4.1",
     "@types/jest": "^30.0.0",
-    "astro": "^7.2.4",
+    "astro": "^7.2.6",
     "jest": "^30.4.2",
     "ts-jest": "^29.4.12"
   },
