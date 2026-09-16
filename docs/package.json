@@ -29,9 +29,9 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^8.2.4",
-    "@astrojs/starlight": "^0.41.8",
+    "@astrojs/starlight": "^0.41.9",
     "@trueberryless-org/starlight-plugins-docs-components": "^0.6.0",
-    "astro": "^7.2.6",
+    "astro": "^7.2.7",
     "sharp": "^0.35.3",
     "starlight-contributor-list": "^0.4.0",
     "starlight-latest-version": "workspace:*",
