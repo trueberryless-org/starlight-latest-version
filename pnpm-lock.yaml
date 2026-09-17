@@ -36,10 +36,10 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0(@astrojs/starlight@0.41.9(astro@7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0))(typescript@5.9.3))
       astro:
-        specifier: ^7.2.7
+        specifier: ^7.2.8
         version: 7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)
       sharp:
-        specifier: ^0.35.3
+        specifier: ^0.35.4
         version: 0.35.4(@types/node@25.9.3)
       starlight-contributor-list:
         specifier: ^0.4.0
@@ -63,7 +63,7 @@ importers:
         specifier: ^30.0.0
         version: 30.0.0
       astro:
-        specifier: ^7.2.7
+        specifier: ^7.2.8
         version: 7.2.10(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@netlify/blobs@10.7.9)(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)
       jest:
         specifier: ^30.4.2
