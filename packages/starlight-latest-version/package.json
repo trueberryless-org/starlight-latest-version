@@ -37,7 +37,7 @@
     "@astrojs/starlight": "0.41.10",
     "@jest/globals": "^30.5.0",
     "@types/jest": "^30.0.0",
-    "astro": "^7.2.9",
+    "astro": "^7.2.10",
     "jest": "^30.5.0",
     "ts-jest": "^29.4.12"
   },
