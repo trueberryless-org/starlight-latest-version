@@ -5,10 +5,33 @@ import { defineConfig } from "astro/config";
 import starlightLatestVersion from "starlight-latest-version";
 import starlightLinksValidator from "starlight-links-validator";
 
+const site =
+  (process.env.CONTEXT === "deploy-preview" ||
+  process.env.CONTEXT === "branch-deploy"
+    ? process.env.DEPLOY_PRIME_URL
+    : process.env.URL) ?? "https://starlight-latest-version.netlify.app";
+
 export default defineConfig({
+  site,
   integrations: [
     starlight({
       title: "Starlight Latest Version",
+      head: [
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image",
+            content: new URL("og.png", site).href,
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image:alt",
+            content: "Show your package's latest version.",
+          },
+        },
+      ],
       editLink: {
         baseUrl:
           "https://github.com/trueberryless-org/starlight-latest-version/edit/main/docs/",
