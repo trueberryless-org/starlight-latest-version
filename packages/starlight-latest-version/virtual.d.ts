@@ -1,8 +1,3 @@
-declare module "virtual:starlight-latest-version-config" {
-  const starlightLatestVersionConfig: import("./index").starlightLatestVersionConfig;
-  export default starlightLatestVersionConfig;
-}
-
 declare module "virtual:starlight-latest-version" {
   /**
    * Fetch the latest version of the configured source.
@@ -12,6 +7,12 @@ declare module "virtual:starlight-latest-version" {
    * `versionMajor` and friends programmatically.
    */
   export function getLatestVersion(): Promise<
-    import("./index").starlightLatestVersionContext
+    import("./libs/version").StarlightLatestVersionContext
   >;
+}
+
+declare module "virtual:starlight-latest-version/config" {
+  const StarlightLatestVersionConfig: import("./libs/config").StarlightLatestVersionConfig;
+
+  export default StarlightLatestVersionConfig;
 }

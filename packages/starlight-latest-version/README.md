@@ -1,12 +1,12 @@
 # `starlight-latest-version`
 
-Show the latest released version of your package in your Starlight documentation.
+Starlight plugin to show the latest released version of your package in your documentation.
 
 ## Documentation
 
 Want to get started immediately?
 
-Check out the `starlight-latest-version` getting started guide.
+Check out the [`starlight-latest-version` getting started guide](https://starlight-latest-version.netlify.app/getting-started/).
 
 ## License
 

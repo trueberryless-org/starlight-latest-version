@@ -1,9 +1,12 @@
-import { AstroError } from "astro/errors";
 import { z } from "astro/zod";
+
+import { throwPluginError } from "./error";
+
+export const sourceTypes = ["github", "gitlab", "npm"] as const;
 
 const configSchema = z.object({
   source: z.object({
-    type: z.enum(["github", "gitlab", "npm"]).default("npm"),
+    type: z.enum(sourceTypes).default("npm"),
     slug: z.string().min(1, "Slug cannot be empty"),
   }),
   badge: z
@@ -20,29 +23,21 @@ const configSchema = z.object({
 
 export function validateConfig(
   userConfig: unknown
-): starlightLatestVersionConfig {
+): StarlightLatestVersionConfig {
   const config = configSchema.safeParse(userConfig);
 
   if (!config.success) {
-    const errors = config.error.flatten();
+    throwPluginError(`Invalid starlight-latest-version configuration:
 
-    throw new AstroError(
-      `Invalid starlight-latest-version configuration:
-
-      ${errors.formErrors.map((formError) => ` - ${formError}`).join("\n")}
-      ${Object.entries(errors.fieldErrors)
-        .map(
-          ([fieldName, fieldErrors]) =>
-            ` - ${fieldName}: ${fieldErrors.join(" - ")}`
-        )
-        .join("\n")}
-        `,
-      `See the error report above for more informations.\n\nIf you believe this is a bug, please file an issue at https://github.com/trueberryless-org/starlight-latest-version/issues/new`
-    );
+${z.prettifyError(config.error)}
+`);
   }
 
   return config.data;
 }
 
-export type starlightLatestVersionUserConfig = z.input<typeof configSchema>;
-export type starlightLatestVersionConfig = z.output<typeof configSchema>;
+export type SourceType = (typeof sourceTypes)[number];
+export type Source = StarlightLatestVersionConfig["source"];
+
+export type StarlightLatestVersionUserConfig = z.input<typeof configSchema>;
+export type StarlightLatestVersionConfig = z.output<typeof configSchema>;

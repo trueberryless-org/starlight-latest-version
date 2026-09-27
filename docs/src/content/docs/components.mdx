@@ -6,6 +6,8 @@ description: An overview of all the components exported by the Starlight Latest 
 Here you can find a list of all the components which are exported by the `starlight-latest-version` package.
 
 import { Badge } from '@astrojs/starlight/components';
+import DeferredVersion from "../../components/deferred-version.astro";
+import DeferredVersionBadge from "../../components/deferred-version-badge.astro";
 import Preview from "../../components/component-preview.astro";
 
 ### Version
@@ -36,7 +38,7 @@ import Version from "starlight-latest-version/components/Version.astro";
 <Version server:defer />
 ```
 
-<Version slot="preview" server:defer />
+<DeferredVersion slot="preview" />
 
 </Preview>
 
@@ -52,9 +54,7 @@ import Version from "starlight-latest-version/components/Version.astro";
 </Version>
 ```
 
-<Version slot="preview" server:defer>
-  <span slot="fallback">Loading...</span>
-</Version>
+<DeferredVersion slot="preview" withFallback />
 
 </Preview>
 
@@ -86,7 +86,7 @@ import VersionBadge from "starlight-latest-version/components/VersionBadge.astro
 <VersionBadge server:defer />
 ```
 
-<VersionBadge slot="preview" server:defer />
+<DeferredVersionBadge slot="preview" />
 
 </Preview>
 
@@ -102,8 +102,6 @@ import VersionBadge from "starlight-latest-version/components/VersionBadge.astro
 </VersionBadge>
 ```
 
-<VersionBadge slot="preview" server:defer>
-  <Badge text={"Loading..."} variant="default" size="medium" slot="fallback" />
-</VersionBadge>
+<DeferredVersionBadge slot="preview" withFallback />
 
 </Preview>

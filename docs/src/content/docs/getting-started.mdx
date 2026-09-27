@@ -92,3 +92,9 @@ import Default from '@astrojs/starlight/components/SiteTitle.astro'
 <p>Custom content in the SiteTitle override</p>
 +<DynamicVersionBadge />
 ```
+
+## Translations
+
+import { I18n } from "@hideoo/starlight-plugins-docs-components";
+
+<I18n label="Starlight Latest Version" translations={import("../../../../packages/starlight-latest-version/translations")} />

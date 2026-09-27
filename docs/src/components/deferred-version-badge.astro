@@ -1,0 +1,18 @@
+---
+import { Badge } from "@astrojs/starlight/components";
+import VersionBadge from "starlight-latest-version/components/VersionBadge.astro";
+
+interface Props {
+  withFallback?: boolean;
+}
+
+const { withFallback = false } = Astro.props;
+---
+
+{withFallback ? (
+  <VersionBadge server:defer>
+    <Badge text="Loading..." variant="default" size="medium" slot="fallback" />
+  </VersionBadge>
+) : (
+  <VersionBadge server:defer />
+)}

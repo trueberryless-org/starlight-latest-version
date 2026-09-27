@@ -1,56 +1,51 @@
+/// <reference path="./locals.d.ts" />
 import type { StarlightPlugin } from "@astrojs/starlight/types";
 
 import {
-  type starlightLatestVersionConfig,
-  type starlightLatestVersionUserConfig,
+  type StarlightLatestVersionConfig,
+  type StarlightLatestVersionUserConfig,
   validateConfig,
 } from "./libs/config";
-import { overrideStarlightComponent } from "./libs/starlight";
-import type { starlightLatestVersionContext } from "./libs/types";
-import { vitePluginstarlightLatestVersionConfig } from "./libs/vite";
+import { overrideComponent } from "./libs/starlight";
+import type { StarlightLatestVersionContext } from "./libs/version";
+import { vitePluginStarlightLatestVersion } from "./libs/vite";
+import { Translations } from "./translations";
 
 export type {
-  starlightLatestVersionConfig,
-  starlightLatestVersionContext,
-  starlightLatestVersionUserConfig,
+  StarlightLatestVersionConfig,
+  StarlightLatestVersionContext,
+  StarlightLatestVersionUserConfig,
 };
 
 export default function starlightLatestVersion(
-  userConfig?: starlightLatestVersionUserConfig
+  userConfig?: StarlightLatestVersionUserConfig
 ): StarlightPlugin {
   const config = validateConfig(userConfig);
 
   return {
     name: "starlight-latest-version",
     hooks: {
+      "i18n:setup"({ injectTranslations }) {
+        injectTranslations(Translations);
+      },
       "config:setup"({
         addIntegration,
-        updateConfig: updateStarlightConfig,
         config: starlightConfig,
         logger,
+        updateConfig: updateStarlightConfig,
       }) {
-        updateStarlightConfig({
-          components: {
-            ...starlightConfig.components,
-            ...(config.showInSiteTitle !== "false"
-              ? overrideStarlightComponent(
-                  starlightConfig.components,
-                  logger,
-                  "SiteTitle",
-                  "DynamicVersionBadge"
-                )
-              : {}),
-          },
-        });
+        if (config.showInSiteTitle !== "false") {
+          const components = { ...starlightConfig.components };
+          overrideComponent(components, logger, "SiteTitle");
+          updateStarlightConfig({ components });
+        }
 
         addIntegration({
           name: "starlight-latest-version-integration",
           hooks: {
             "astro:config:setup": ({ updateConfig }) => {
               updateConfig({
-                vite: {
-                  plugins: [vitePluginstarlightLatestVersionConfig(config)],
-                },
+                vite: { plugins: [vitePluginStarlightLatestVersion(config)] },
               });
             },
             "astro:config:done": ({ injectTypes }) => {

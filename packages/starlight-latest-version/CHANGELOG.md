@@ -38,7 +38,7 @@
 
 ### Minor Changes
 
-- [#32](https://github.com/trueberryless-org/starlight-latest-version/pull/32) [`9bdad60`](https://github.com/trueberryless-org/starlight-latest-version/commit/9bdad60c0f257bb5889c5ca9c0700d2e5c9dcc9b) Thanks [@trueberryless](https://github.com/trueberryless)! - ⚠️ **BREAKING CHANGE:** If you set [`showInSiteTitle`](https://starlight-latest-version.trueberryless.org/configuration#showinsitetitle) to `"deferred"`, you will have to [enable experimental sessions](https://docs.astro.build/en/reference/experimental-flags/sessions/#enabling-experimental-sessions) because the version will be cached for an hour.
+- [#32](https://github.com/trueberryless-org/starlight-latest-version/pull/32) [`9bdad60`](https://github.com/trueberryless-org/starlight-latest-version/commit/9bdad60c0f257bb5889c5ca9c0700d2e5c9dcc9b) Thanks [@trueberryless](https://github.com/trueberryless)! - ⚠️ **BREAKING CHANGE:** If you set [`showInSiteTitle`](https://starlight-latest-version.netlify.app/configuration#showinsitetitle) to `"deferred"`, you will have to [enable experimental sessions](https://docs.astro.build/en/reference/experimental-flags/sessions/#enabling-experimental-sessions) because the version will be cached for an hour.
 
 ## 0.4.0
 
@@ -64,11 +64,11 @@ Special thanks to [@HiDeoo](https://github.com/HiDeoo) for their valuable feedba
 
 ### Minor Changes
 
-- [#16](https://github.com/trueberryless-org/starlight-latest-version/pull/16) [`3de9964`](https://github.com/trueberryless-org/starlight-latest-version/commit/3de9964f4860928c42754c94e8be1c246b1cc674) Thanks [@trueberryless](https://github.com/trueberryless)! - Use [`server:defer`](https://docs.astro.build/en/reference/directives-reference/#serverdefer) in the `SiteTitle.astro` override component if [`showInSiteTitle`](https://starlight-latest-version.trueberryless.org/configuration/#showinsitetitle) is set to `"deferred"`.
+- [#16](https://github.com/trueberryless-org/starlight-latest-version/pull/16) [`3de9964`](https://github.com/trueberryless-org/starlight-latest-version/commit/3de9964f4860928c42754c94e8be1c246b1cc674) Thanks [@trueberryless](https://github.com/trueberryless)! - Use [`server:defer`](https://docs.astro.build/en/reference/directives-reference/#serverdefer) in the `SiteTitle.astro` override component if [`showInSiteTitle`](https://starlight-latest-version.netlify.app/configuration/#showinsitetitle) is set to `"deferred"`.
 
-  ⚠️ **BREAKING CHANGE:** You now have to use some [server adapter](https://docs.astro.build/en/guides/on-demand-rendering/#server-adapters) if you set [`showInSiteTitle`](https://starlight-latest-version.trueberryless.org/configuration/#showinsitetitle) to `"deferred"`.
+  ⚠️ **BREAKING CHANGE:** You now have to use some [server adapter](https://docs.astro.build/en/guides/on-demand-rendering/#server-adapters) if you set [`showInSiteTitle`](https://starlight-latest-version.netlify.app/configuration/#showinsitetitle) to `"deferred"`.
 
-  If you set the [`showInSiteTitle` configuration option](https://starlight-latest-version.trueberryless.org/configuration/#showinsitetitle) to `"deferred"`, you have to add a [server adapter](https://docs.astro.build/en/guides/on-demand-rendering/#server-adapters) because the plugin override now uses [`server:defer`](https://docs.astro.build/en/reference/directives-reference/#serverdefer) in order to fetch the latest version on-demand.
+  If you set the [`showInSiteTitle` configuration option](https://starlight-latest-version.netlify.app/configuration/#showinsitetitle) to `"deferred"`, you have to add a [server adapter](https://docs.astro.build/en/guides/on-demand-rendering/#server-adapters) because the plugin override now uses [`server:defer`](https://docs.astro.build/en/reference/directives-reference/#serverdefer) in order to fetch the latest version on-demand.
 
   Read more about Server Islands in [this blog post](https://astro.build/blog/future-of-astro-server-islands/) or the [Astro documentation](https://docs.astro.build/en/guides/server-islands/).
 
@@ -76,9 +76,9 @@ Special thanks to [@HiDeoo](https://github.com/HiDeoo) for their valuable feedba
 
   ⚠️ **BREAKING CHANGE:** The configuration interface changed.
 
-  Please follow the steps below to use the plugin like before or read the [documentation](https://starlight-latest-version.trueberryless.org/configuration/#source) for the newly defined API.
+  Please follow the steps below to use the plugin like before or read the [documentation](https://starlight-latest-version.netlify.app/configuration/#source) for the newly defined API.
 
-  Change the removed `repo` configuration to the new [`source`](https://starlight-latest-version.trueberryless.org/configuration/#source) configuration object:
+  Change the removed `repo` configuration to the new [`source`](https://starlight-latest-version.netlify.app/configuration/#source) configuration object:
 
   ```diff
    // astro.config.ts
@@ -95,7 +95,7 @@ Special thanks to [@HiDeoo](https://github.com/HiDeoo) for their valuable feedba
 
 ### Patch Changes
 
-- [#16](https://github.com/trueberryless-org/starlight-latest-version/pull/16) [`3de9964`](https://github.com/trueberryless-org/starlight-latest-version/commit/3de9964f4860928c42754c94e8be1c246b1cc674) Thanks [@trueberryless](https://github.com/trueberryless)! - Make override of Starlight `SiteTitle.astro` optional. You now have to opt-in by setting the new [`showInSiteTitle`](https://starlight-latest-version.trueberryless.org/configuration/#showinsitetitle) configuration option to `"true"` because it does not get overridden by default.
+- [#16](https://github.com/trueberryless-org/starlight-latest-version/pull/16) [`3de9964`](https://github.com/trueberryless-org/starlight-latest-version/commit/3de9964f4860928c42754c94e8be1c246b1cc674) Thanks [@trueberryless](https://github.com/trueberryless)! - Make override of Starlight `SiteTitle.astro` optional. You now have to opt-in by setting the new [`showInSiteTitle`](https://starlight-latest-version.netlify.app/configuration/#showinsitetitle) configuration option to `"true"` because it does not get overridden by default.
 
 - [#16](https://github.com/trueberryless-org/starlight-latest-version/pull/16) [`ae72935`](https://github.com/trueberryless-org/starlight-latest-version/commit/ae72935cbdca23c5e7d880d4f0c82c57c328e874) Thanks [@trueberryless](https://github.com/trueberryless)! - Add simple [fallback content](https://docs.astro.build/en/guides/server-islands/#server-island-fallback-content) for SiteTitle override Version Badge
 

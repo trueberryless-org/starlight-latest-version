@@ -1,33 +1,15 @@
 import type { ViteUserConfig } from "astro";
 import { fileURLToPath } from "node:url";
 
-import type { starlightLatestVersionConfig } from "..";
+import type { StarlightLatestVersionConfig } from "./config";
 
-export function vitePluginstarlightLatestVersionConfig(
-  config: starlightLatestVersionConfig
+export function vitePluginStarlightLatestVersion(
+  config: StarlightLatestVersionConfig
 ): VitePlugin {
-  const fetchVersionPath = fileURLToPath(
-    new URL("./utils.ts", import.meta.url)
-  ).replace(/\\/g, "/");
-
-  const fetchVersionImportId = fetchVersionPath.startsWith("/")
-    ? `/@fs${fetchVersionPath}`
-    : `/@fs/${fetchVersionPath}`;
-
   const modules = {
-    "virtual:starlight-latest-version-config": `export default ${JSON.stringify(
-      config
-    )}`,
-    "virtual:starlight-latest-version": `
-import fetchVersion from ${JSON.stringify(fetchVersionImportId)};
-
-const config = ${JSON.stringify(config)};
-
-export function getLatestVersion() {
-  return fetchVersion(config);
-}
-`,
-  } satisfies Record<string, string>;
+    "virtual:starlight-latest-version": getLatestVersionVirtualModule(),
+    "virtual:starlight-latest-version/config": `export default ${JSON.stringify(config)};`,
+  };
 
   const moduleResolutionMap = Object.fromEntries(
     (Object.keys(modules) as (keyof typeof modules)[]).map((key) => [
@@ -37,15 +19,23 @@ export function getLatestVersion() {
   );
 
   return {
-    name: "vite-plugin-starlight-latest-version-config",
+    name: "vite-plugin-starlight-latest-version",
     load(id) {
       const moduleId = moduleResolutionMap[id];
       return moduleId ? modules[moduleId] : undefined;
     },
     resolveId(id) {
-      return id in modules ? resolveVirtualModuleId(id) : undefined;
+      return Object.hasOwn(modules, id)
+        ? resolveVirtualModuleId(id)
+        : undefined;
     },
   };
+}
+
+function getLatestVersionVirtualModule(): string {
+  const moduleId = fileURLToPath(new URL("./release.ts", import.meta.url));
+
+  return `export { getLatestVersion } from ${JSON.stringify(moduleId)};`;
 }
 
 function resolveVirtualModuleId<TModuleId extends string>(

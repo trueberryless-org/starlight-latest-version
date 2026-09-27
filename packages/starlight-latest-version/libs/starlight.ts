@@ -1,29 +1,25 @@
 import type { StarlightUserConfig } from "@astrojs/starlight/types";
 import type { AstroIntegrationLogger } from "astro";
 
-export function overrideStarlightComponent(
-  components: StarlightUserConfig["components"],
+export function overrideComponent(
+  components: NonNullable<StarlightUserConfig["components"]>,
   logger: AstroIntegrationLogger,
-  override: keyof NonNullable<StarlightUserConfig["components"]>,
-  component: string
+  component: keyof NonNullable<StarlightUserConfig["components"]>
 ) {
-  if (components?.[override]) {
+  const override = components[component];
+  if (override) {
     logger.warn(
-      `It looks like you already have a \`${override}\` component override in your Starlight configuration.`
+      `It looks like you already have a \`${component}\` component override in your Starlight configuration.`
     );
     logger.warn(
-      `To use \`starlight-latest-version\`, either remove your override or update it to render the content from \`starlight-latest-version/components/${component}.astro\`.`
+      "To use `starlight-latest-version`, either remove your override or update it to render the content from `starlight-latest-version/components/DynamicVersionBadge.astro`."
     );
-    if (component === "DynamicVersionBadge") {
-      logger.warn(
-        "Notice that the `DynamicVersionBadge` component must be rendered AFTER the original Starlight `SiteTitle` component in the DOM. This ensures proper layout and behavior within the application."
-      );
-    }
-
-    return {};
+    logger.warn(
+      "Notice that the `DynamicVersionBadge` component must be rendered AFTER the original Starlight `SiteTitle` component in the DOM. This ensures proper layout and behavior within the application."
+    );
+    return;
   }
 
-  return {
-    [override]: `starlight-latest-version/overrides/${override}.astro`,
-  };
+  components[component] =
+    `starlight-latest-version/overrides/${component}.astro`;
 }

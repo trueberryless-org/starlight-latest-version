@@ -1,9 +1,12 @@
 ---
-import fetchVersion from "../libs/utils";
-import pluginConfig from "virtual:starlight-latest-version-config";
+import { getLatestVersion } from "../libs/release";
+import { getVersionLabel } from "../libs/version";
 
-const version = await fetchVersion(pluginConfig);
+const version = await getLatestVersion();
+const label = getVersionLabel(
+  version,
+  Astro.locals.t("starlightLatestVersion.unavailable")
+);
 ---
 
-{version.versionAvailable && <span>{version.version}</span>}
-{!version.versionAvailable && <span>N/A</span>}
+<span>{label}</span>

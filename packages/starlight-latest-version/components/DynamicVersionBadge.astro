@@ -1,29 +1,33 @@
 ---
-import pluginConfig from "virtual:starlight-latest-version-config";
-import VersionBadge from "./VersionBadge.astro";
 import { Badge } from "@astrojs/starlight/components";
+import config from "virtual:starlight-latest-version/config";
+
+import VersionBadge from "./VersionBadge.astro";
 ---
 
-{pluginConfig.showInSiteTitle === "true" && <VersionBadge />}
-{
-  pluginConfig.showInSiteTitle === "deferred" && (
-    <VersionBadge server:defer useCache={true}>
-      <Badge
-        text={"Loading..."}
-        variant="default"
-        size="medium"
-        slot="fallback"
-      />
-    </VersionBadge>
-  )
-}
-
-{(pluginConfig.showInSiteTitle === "true" || pluginConfig.showInSiteTitle === "deferred") && (
-  <style is:global>
-    .title-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-  </style>
+{config.showInSiteTitle === "true" && <VersionBadge />}
+{config.showInSiteTitle === "deferred" && (
+  <VersionBadge server:defer useCache>
+    <Badge
+      text={Astro.locals.t("starlightLatestVersion.loading")}
+      variant="default"
+      size="medium"
+      class="starlight-latest-version-fallback"
+      slot="fallback"
+    />
+  </VersionBadge>
 )}
+{config.showInSiteTitle !== "false" && <style is:global>
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+</style>}
+
+<style>
+  .starlight-latest-version-fallback {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+</style>

@@ -1,0 +1,17 @@
+---
+import Version from "starlight-latest-version/components/Version.astro";
+
+interface Props {
+  withFallback?: boolean;
+}
+
+const { withFallback = false } = Astro.props;
+---
+
+{withFallback ? (
+  <Version server:defer>
+    <span slot="fallback">Loading...</span>
+  </Version>
+) : (
+  <Version server:defer />
+)}
