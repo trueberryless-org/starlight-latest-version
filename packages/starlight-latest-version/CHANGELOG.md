@@ -1,5 +1,29 @@
 # starlight-latest-version
 
+## 0.9.0
+
+### Minor Changes
+
+- [#155](https://github.com/trueberryless-org/starlight-latest-version/pull/155) [`5e87ac9`](https://github.com/trueberryless-org/starlight-latest-version/commit/5e87ac952f6a8fcc7f323bc17e9f717d4603ac16) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - Adds support for Astro v7, drops support for Astro v6.
+  
+  ⚠️ **BREAKING CHANGE:** The minimum supported version of Starlight is now `0.41.0`.
+  
+  Please follow the [upgrade guide](https://github.com/withastro/starlight/releases/tag/%40astrojs%2Fstarlight%400.41.0) to update your project.
+
+- [#155](https://github.com/trueberryless-org/starlight-latest-version/pull/155) [`5e87ac9`](https://github.com/trueberryless-org/starlight-latest-version/commit/5e87ac952f6a8fcc7f323bc17e9f717d4603ac16) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - ⚠️ **BREAKING CHANGE:** Renames the exported `starlightLatestVersionConfig`, `starlightLatestVersionUserConfig` and `starlightLatestVersionContext` types to `StarlightLatestVersionConfig`, `StarlightLatestVersionUserConfig` and `StarlightLatestVersionContext`.
+  
+  If you import any of these types, update the names in your imports.
+
+- [#155](https://github.com/trueberryless-org/starlight-latest-version/pull/155) [`5e87ac9`](https://github.com/trueberryless-org/starlight-latest-version/commit/5e87ac952f6a8fcc7f323bc17e9f717d4603ac16) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - Adds translations for the loading and unavailable version labels in Arabic, Chinese (China), Chinese (Taiwan), English, French, German, Italian, Japanese, Korean, Portuguese, Russian, and Spanish.
+  
+  To provide translations for additional languages or override the default ones, check the ["Translate Starlight's UI"](https://starlight.astro.build/guides/i18n/#translate-starlights-ui) guide in the Starlight documentation.
+
+### Patch Changes
+
+- [#155](https://github.com/trueberryless-org/starlight-latest-version/pull/155) [`5e87ac9`](https://github.com/trueberryless-org/starlight-latest-version/commit/5e87ac952f6a8fcc7f323bc17e9f717d4603ac16) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - Refactors the plugin internals.
+
+- [#155](https://github.com/trueberryless-org/starlight-latest-version/pull/155) [`5e87ac9`](https://github.com/trueberryless-org/starlight-latest-version/commit/5e87ac952f6a8fcc7f323bc17e9f717d4603ac16) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - Fixes the version badge in the site title wrapping onto multiple lines on narrow viewports.
+
 ## 0.8.0
 
 ### Minor Changes
